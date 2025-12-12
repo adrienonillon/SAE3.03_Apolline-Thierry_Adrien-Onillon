@@ -1,0 +1,14 @@
+/* Fonts */
+@font-face {
+    font-family: 'Novaro';
+    src: url('/fonts/novaro.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('/fonts/Omnes%20Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,74 @@
+/* Importations de base */
+@import './styles/base.css';
+
+/* --- LE CONTENEUR GRILLE (La Carte) --- */
+.scroll-container {
+    display: grid;
+    /* 8 colonnes de large (800vw au total) */
+    grid-template-columns: repeat(8, 100vw);
+    /* 6 lignes de haut (600vh au total) */
+    grid-template-rows: repeat(6, 100vh);
+    
+    width: 800vw;
+    height: 600vh;
+    
+    /* Position fixe pour que GSAP puisse déplacer tout le "plateau" */
+    position: fixed;
+    top: 0;
+    left: 0;
+    will-change: transform; /* Optimisation performance */
+}
+
+/* --- STYLE DES SLIDES --- */
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Centrage du contenu */
+}
+
+.content {
+    width: 40%;
+    z-index: 2;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1); /* Optionnel : léger fond pour lisibilité */
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+
+.lottie-wrapper {
+    width: 50%;
+    height: 80%;
+}
+
+/* --- PLACEMENT SUR LA GRILLE (Le Serpent) --- */
+/* Syntaxe : grid-area: ligne / colonne; */
+
+#slide-0 { grid-area: 1 / 1; } /* Départ */
+
+#slide-1 { grid-area: 2 / 1; background-color: var(--jaune); color: var(--bleu); } /* BAS */
+
+#slide-2 { grid-area: 2 / 2; background-color: var(--jaune); color: var(--bleu); } /* DROITE */
+
+#slide-3 { grid-area: 3 / 2; background-color: var(--jaune); color: var(--rouge); } /* BAS */
+
+#slide-4 { grid-area: 3 / 3; background-color: var(--jaune); color: var(--bleu); } /* DROITE */
+
+#slide-5 { grid-area: 3 / 4; background-color: var(--vert); color: var(--jaune); } /* DROITE */
+
+#slide-6 { grid-area: 3 / 5; background-color: var(--vert); color: var(--rouge); } /* DROITE */
+
+#slide-7 { grid-area: 4 / 5; background-color: var(--bleu); color: var(--jaune); } /* BAS */
+
+#slide-8 { grid-area: 4 / 6; background-color: var(--vert); color: var(--rouge); } /* DROITE */
+
+#slide-9 { grid-area: 5 / 6; background-color: var(--bleu); color: var(--rose); } /* BAS */
+
+#slide-10 { grid-area: 5 / 7; background-color: var(--bleu); color: var(--rose); } /* DROITE */
+
+#slide-11 { grid-area: 5 / 8; background-color: var(--bleu); color: var(--rose); } /* DROITE */
+
+#slide-12 { grid-area: 6 / 8; background-color: var(--rouge); color: var(--bleu); } /* BAS */
