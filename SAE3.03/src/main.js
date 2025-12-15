@@ -80,9 +80,24 @@ function setupScrollFlow() {
     // Vêtements sortent du bas
     tl.to(".clothes-pile", { bottom: "10%", opacity: 1, ease: "back.out(1.5)", stagger: 0.15, duration: 0.8 }, "slide4-anim+=0.8");
 
-    // --- SLIDE 5 (GRAPHIQUE PLUS HAUT) ---
+    // --- SLIDE 5 (GRAPHIQUE ÉTIQUETTES JAUNES) ---
     tl.to(container, { x: "-200vw", y: "-300vh", ease: "none" }); tl.addLabel("slide5-anim");
-    tl.to(".chart-bar", { height: (i, target) => getComputedStyle(target).getPropertyValue('--target-height'), duration: 1.5, ease: "power3.out", stagger: 0.3 }, "slide5-anim");
+    
+    // 1. Les barres grandissent
+    tl.to(".chart-bar", { 
+        height: (i, target) => getComputedStyle(target).getPropertyValue('--target-height'), 
+        duration: 1.5, 
+        ease: "power3.out", 
+        stagger: 0.2 
+    }, "slide5-anim");
+
+    // 2. Le contenu (Icônes, texte) apparaît
+    tl.to(".tag-content", { 
+        opacity: 1, 
+        duration: 0.8, 
+        ease: "power2.out", 
+        stagger: 0.2 
+    }, "slide5-anim+=0.5");
 
     // --- SLIDE 6 (HORLOGE ESPACÉE) ---
     tl.to(container, { x: "-300vw", y: "-300vh", ease: "none" }); tl.addLabel("slide6-anim");

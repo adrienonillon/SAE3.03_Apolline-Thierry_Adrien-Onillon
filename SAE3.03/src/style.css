@@ -8,49 +8,17 @@ body { font-family: 'Montserrat', sans-serif; }
 .slide { width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; }
 .content { z-index: 10; padding: 2rem; background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border-radius: 15px; text-align: center; }
 
-/* SLIDE 1 : Style spécifique pour les gros chiffres */
-#slide-1 .content {
-    background: transparent;
-    backdrop-filter: none;
-    padding: 3rem;
-}
-
-#slide-1 h2 {
-    line-height: 0.9;
-    margin: 0;
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-}
-
-#slide-1 .big-number {
-    font-family: var(--font-primary); /* Novaro */
-    font-size: 18rem; /* 300px Figma ~ 18rem */
-    font-weight: 900;
-    color: var(--rouge);
-}
-
-#slide-1 .millions-text {
-    font-family: var(--font-secondary); /* Omnes */
-    font-size: 3.5rem; /* Même taille que le texte */
-    font-weight: 700;
-    color: var(--bleu);
-}
-
-#slide-1 p {
-    font-family: var(--font-secondary); /* Omnes */
-    font-size: 3.5rem; /* 55px Figma ~ 3.5rem */
-    font-weight: 700;
-    margin-top: 1rem;
-    color: var(--bleu);
-}
-
-/* SLIDE 1 (Condensé) */
+/* SLIDE 1 */
+#slide-1 .content { background: transparent; backdrop-filter: none; padding: 3rem; }
+#slide-1 h2 { line-height: 0.9; margin: 0; display: flex; align-items: baseline; gap: 1rem; }
+#slide-1 .big-number { font-family: var(--font-primary); font-size: 18rem; font-weight: 900; color: var(--rouge); }
+#slide-1 .millions-text { font-family: var(--font-secondary); font-size: 3.5rem; font-weight: 700; color: var(--bleu); }
+#slide-1 p { font-family: var(--font-secondary); font-size: 3.5rem; font-weight: 700; margin-top: 1rem; color: var(--bleu); }
 .falling-elements { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
 .falling-item { position: absolute; top: -40vh; min-width: 100px; z-index: 5; }
 .falling-item.front { z-index: 15; }
 
-/* SLIDE 2 : VÊTEMENTS EN HAUT + TEXTE EN BAS */
+/* SLIDE 2 */
 .slide2-layout { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3rem; width: 100%; }
 .tshirts-top { display: flex; flex-direction: column; gap: 1.5rem; }
 .tshirt-row { display: flex; gap: 2rem; justify-content: center; align-items: center; }
@@ -58,40 +26,12 @@ body { font-family: 'Montserrat', sans-serif; }
 .ts-icon-orig.blue { filter: brightness(0.8) sepia(1) hue-rotate(180deg) saturate(3); }
 .ts-icon-orig.beige { filter: sepia(1) saturate(0.5); }
 .text-reveal { opacity: 0; transform: translateY(30px); }
+#slide-2 .content { background: transparent; backdrop-filter: none; }
+#slide-2 h2 { display: flex; align-items: center; justify-content: center; margin: 1rem 0; line-height: 1; }
+#slide-2 .big-seven, #slide-2 .slash, #slide-2 .ten { font-family: var(--font-primary); font-size: 9.375rem; font-weight: 900; color: var(--rouge); }
+#slide-2 .top-text, #slide-2 .bottom-text { font-family: var(--font-secondary); font-size: 3.5rem; font-weight: 700; margin: 0.5rem 0; color: var(--bleu); text-align: center; }
 
-#slide-2 .content {
-    background: transparent;
-    backdrop-filter: none;
-}
-
-#slide-2 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-    line-height: 1;
-}
-
-#slide-2 .big-seven,
-#slide-2 .slash,
-#slide-2 .ten {
-    font-family: var(--font-primary);
-    font-size: 9.375rem;
-    font-weight: 900;
-    color: var(--rouge);
-}
-
-#slide-2 .top-text,
-#slide-2 .bottom-text {
-    font-family: var(--font-secondary);
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin: 0.5rem 0;
-    color: var(--bleu);
-    text-align: center;
-}
-
-/* SLIDE 3 : ZIP (Condensé) */
+/* SLIDE 3 */
 #slide-3 { background-color: var(--jaune); color: var(--bleu); }
 .zipper-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
 .zipper-panel { position: absolute; top: 0; width: 50%; height: 100%; background-color: var(--rouge); }
@@ -101,7 +41,7 @@ body { font-family: 'Montserrat', sans-serif; }
 .zip-content { display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .zip-number { font-size: 12rem; line-height: 1; margin: 0; color: var(--bleu); font-weight: 900; }
 
-/* --- SLIDE 4 : ARMOIRE SLIDE DROITE + VÊTEMENTS CACHÉS --- */
+/* SLIDE 4 */
 #slide-4 { background-color: var(--jaune); color: var(--bleu); display: flex; flex-direction: row; }
 .split-col { width: 50%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; }
 .text-col-left { justify-content: flex-start; padding-left: 12rem; }
@@ -110,83 +50,173 @@ body { font-family: 'Montserrat', sans-serif; }
 .number-50 { font-family: var(--font-primary); font-size: 18rem; font-weight: 900; color: var(--rouge); }
 .percent { font-family: var(--font-secondary); font-size: 3.5rem; font-weight: 700; color: var(--bleu); }
 .big-desc-alt { font-family: var(--font-secondary); font-size: 3.5rem; font-weight: 700; margin-top: 1rem; color: var(--bleu); }
-
 .single-wardrobe-container { position: relative; width: 550px; height: 650px; overflow: hidden; }
 .wardrobe-door-top, .wardrobe-door-bottom { position: absolute; left: 0; width: 100%; height: 50%; overflow: hidden; z-index: 10; }
-.wardrobe-door-top { top: 0; }
-.wardrobe-door-bottom { bottom: 0; }
+.wardrobe-door-top { top: 0; } .wardrobe-door-bottom { bottom: 0; }
 .wardrobe-img-crop { position: absolute; left: 0; width: 100%; height: 200%; object-fit: contain; }
-.wardrobe-img-crop.top { top: 0; object-position: top center; }
-.wardrobe-img-crop.bottom { bottom: 0; object-position: bottom center; }
-/* Vêtements dans le haut avec espacement */
+.wardrobe-img-crop.top { top: 0; object-position: top center; } .wardrobe-img-crop.bottom { bottom: 0; object-position: bottom center; }
 .wardrobe-interior-hidden { position: absolute; top: 50%; left: 0; width: 100%; height: 50%; z-index: 5; display: flex; justify-content: center; align-items: flex-start; overflow: visible; padding-top: 2rem; gap: 2rem; }
 .clothes-pile { width: 100px; position: absolute; top: -150px; }
-.clothes-pile.c1 { left: 32%; transform: translateX(-50%); }
-.clothes-pile.c2 { left: 50%; transform: translateX(-50%); }
-.clothes-pile.c3 { left: 70%; transform: translateX(-50%); }
+.clothes-pile.c1 { left: 32%; transform: translateX(-50%); } .clothes-pile.c2 { left: 50%; transform: translateX(-50%); } .clothes-pile.c3 { left: 70%; transform: translateX(-50%); }
 
 
-/* --- SLIDE 5 : GRAPHIQUE BARRES HAUTES + ICÔNES --- */
-#slide-5 { background-color: var(--vert); color: var(--jaune); align-items: flex-start; padding: 5vw; }
-.chart-container { width: 100%; height: 90%; display: flex; flex-direction: column; }
-.chart-title { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 3rem; max-width: 800px; text-align: left; }
-.big-four { font-family: var(--font-primary); font-size: 18rem; font-weight: 900; color: var(--rouge); line-height: 1; }
-.title-text { font-family: var(--font-secondary); font-size: 3.5rem; font-weight: 700; color: var(--jaune); line-height: 1.2; }
-.title-text sup { font-size: 3.5rem; }
-.bars-wrapper { display: flex; align-items: flex-end; justify-content: space-around; height: 100%; width: 100%; gap: 2rem; }
-.chart-bar { width: 22%; position: relative; display: flex; justify-content: center; align-items: flex-end; height: 0%; }
+/* --- SLIDE 5 : GRAPHIQUE ÉTIQUETTES / HEADER FLEX --- */
+#slide-5 { 
+    background-color: #008080; 
+    color: var(--jaune); 
+    padding: 2vh 2vw 0 2vw; 
+    align-items: center;
+}
 
-.tag-shape.fixed-tag { 
-    width: 100%; height: 100%; background-color: var(--jaune); 
-    border-top-left-radius: 30px; border-top-right-radius: 30px;
-    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-    padding: 2rem 1rem 2rem 1rem;
+.chart-container { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
     position: relative;
 }
 
-.tag-circle {
-    width: 50px; height: 50px;
-    background-color: var(--bleu);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
+/* Header Flex: Texte à gauche, Chiffre à droite */
+.chart-header-complex {
+    position: absolute;
+    top: 2vh;
+    left: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-text-block {
+    text-align: right;
+    font-family: 'Omnes', var(--font-secondary);
+    font-size: 55px;
+    font-weight: 800;
+    color: #FDD835;
+    line-height: 1.1;
+}
+
+.header-number-block {
+    display: flex;
+    align-items: baseline;
+    line-height: 1;
+}
+
+.huge-4-red {
+    font-family: 'Novaro', var(--font-primary);
+    font-size: 300px;
+    font-weight: 900;
+    color: #E53935; 
+}
+
+.eme-yellow {
     font-family: var(--font-primary);
-    font-size: 2rem; font-weight: 900;
-    color: var(--jaune);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FDD835;
+    margin-left: 5px;
+}
+
+/* Wrapper des barres */
+.bars-wrapper { 
+    display: flex; 
+    align-items: flex-end; 
+    justify-content: space-evenly; 
+    height: 90%; /* On monte plus haut comme demandé */
+    width: 100%; 
+    gap: 1vw;
+}
+
+/* La Barre */
+.chart-bar { 
+    flex: 1; 
+    max-width: 22%; 
+    position: relative; 
+    display: flex; 
+    height: 0%; /* Départ anim */
+}
+
+/* Hauteurs augmentées */
+.bar-textile  { --target-height: 50%; } 
+.bar-alim     { --target-height: 65%; } 
+.bar-logement { --target-height: 80%; } 
+.bar-transport { --target-height: 100%; }
+
+/* Forme de l'étiquette */
+.tag-shape { 
+    width: 100%; 
+    height: 100%; 
+    background-color: #FDD835; 
+    clip-path: polygon(20% 0%, 80% 0%, 100% 8%, 100% 100%, 0% 100%, 0% 8%);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    position: relative;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+/* Contenu intérieur */
+.tag-content {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+}
+
+.tag-hole {
+    width: 20px; 
+    height: 20px;
+    background-color: #004D40; 
+    border-radius: 50%;
+    margin-bottom: 1rem;
     flex-shrink: 0;
 }
 
-.tag-label { 
+/* 1. Le chiffre */
+.tag-rank {
     font-family: var(--font-primary);
-    font-size: 2rem; font-weight: 900;
-    color: var(--rouge);
+    font-size: 4rem; 
+    font-weight: 900;
+    color: #D32F2F; 
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+/* 2. Le Texte (Label) juste sous le chiffre */
+.tag-label { 
+    font-family: var(--font-secondary);
+    font-size: 1.5rem; 
+    font-weight: 800;
+    color: #D32F2F;
     text-align: center;
     line-height: 1.2;
-    flex-grow: 1;
-    display: flex; align-items: center;
+    margin-bottom: 1rem; 
 }
 
+/* 3. L'icône (Logo) tout en bas */
 .tag-icon { 
-    width: 80px; height: auto;
-    flex-shrink: 0;
-    opacity: 0;
+    width: 60px; 
+    height: auto;
+    margin-bottom: auto; 
 }
 
-/* Hauteurs des barres */
-.bar-1 { --target-height: 50%; height: 50%; } 
-.bar-2 { --target-height: 70%; height: 70%; } 
-.bar-3 { --target-height: 85%; height: 85%; } 
-.bar-4 { --target-height: 100%; height: 100%; }
+.filter-red {
+    filter: invert(24%) sepia(87%) saturate(2465%) hue-rotate(345deg) brightness(92%) contrast(92%);
+}
 
 
-/* --- SLIDE 6 : HORLOGE ESPACÉE --- */
+/* SLIDE 6 */
 #slide-6 { background-color: var(--vert); color: var(--jaune); }
 .top-title { font-size: 2.5rem; font-weight: bold; margin-bottom: 3rem; }
-.clock-coins-container.spaced-out { display: flex; align-items: center; justify-content: center; gap: 6rem; } /* Plus d'espace */
+.clock-coins-container.spaced-out { display: flex; align-items: center; justify-content: center; gap: 6rem; } 
 .clock-wrapper { width: 250px; height: 250px; background: var(--jaune); border-radius: 50%; position: relative; border: 10px solid #e0c060; }
 .clock-face { width: 100%; height: 100%; position: relative; }
 .clock-hand { position: absolute; bottom: 50%; left: 50%; background: var(--rouge); transform-origin: bottom center; }
-.hour-hand { width: 6px; height: 60px; margin-left: -3px; }
-.minute-hand { width: 4px; height: 90px; margin-left: -2px; }
+.hour-hand { width: 6px; height: 60px; margin-left: -3px; } .minute-hand { width: 4px; height: 90px; margin-left: -2px; }
 .hours-text { text-align: center; font-size: 2rem; font-weight: bold; color: var(--jaune); }
 .big-hours { font-size: 6rem; font-weight: 900; color: var(--rouge); display: block; line-height: 0.9; }
 .coins-wrapper { display: flex; flex-direction: column; align-items: center; }
@@ -195,27 +225,24 @@ body { font-family: 'Montserrat', sans-serif; }
 .coin-1 { bottom: 0; left: 20px; } .coin-2 { bottom: 10px; left: 50px; } .coin-3 { bottom: 25px; left: 30px; } .coin-4 { bottom: 40px; left: 60px; } .coin-5 { bottom: 50px; left: 40px; }
 .coins-text { color: var(--jaune); font-weight: bold; margin-top: 1rem; }
 
-
-/* --- SLIDE 7 : EAU AVEC JET --- */
+/* SLIDE 7 */
 #slide-7 { background-color: var(--vert); color: var(--jaune); justify-content: flex-start; padding-top: 10vh; }
 .water-content { text-align: center; z-index: 10; }
 .water-number { font-size: 5rem; font-weight: 900; margin-top: 1rem; }
 .water-fill-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 70%; overflow: hidden; pointer-events: none; }
-/* Le jet d'eau */
 .water-jet { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 30px; height: 0%; background: #1a237e; z-index: 5; }
 .water-level { position: absolute; bottom: 0; left: 0; width: 100%; height: 0%; background-color: #1a237e; display: flex; align-items: flex-start; }
 .water-wave { width: 200%; height: auto; position: absolute; top: -50px; animation: waveMove 10s linear infinite; }
 @keyframes waveMove { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-
-/* --- SLIDE 8 : RANA PLAZA (GAUCHE/DROITE, LUMIÈRES, EFFONDREMENT) --- */
+/* SLIDE 8 */
 #slide-8 { background-color: var(--vert); color: var(--jaune); }
 .rana-split-container { display: flex; width: 100%; height: 100%; }
 .building-col { width: 50%; display: flex; align-items: flex-end; justify-content: center; }
 .text-col-rana { width: 50%; display: flex; align-items: center; justify-content: flex-start; padding-left: 3rem; }
 .building-wrapper-rana { width: 80%; position: relative; }
-.building-svg-rana { width: 100%; height: auto; filter: brightness(1); /* Lumières allumées au début */ transition: filter 0.5s; }
-.building-svg-rana.lights-out { filter: brightness(0.3) sepia(1) hue-rotate(-50deg); /* Lumières éteintes, ambiance sombre */ }
+.building-svg-rana { width: 100%; height: auto; filter: brightness(1); transition: filter 0.5s; }
+.building-svg-rana.lights-out { filter: brightness(0.3) sepia(1) hue-rotate(-50deg); }
 .tragedy-text-rana { text-align: left; opacity: 0; }
 .tragedy-text-rana h3 { font-size: 2.5rem; color: var(--jaune); }
 .stats-block-rana { margin-top: 2rem; }
@@ -223,8 +250,7 @@ body { font-family: 'Montserrat', sans-serif; }
 .stat-injured { font-size: 4rem; font-weight: 900; color: var(--rouge); margin: 0; }
 .stats-block-rana span { font-size: 2rem; color: var(--jaune); }
 
-
-/* --- SLIDE 9 : RECYCLAGE DOUBLES BACS HORIZONTAUX --- */
+/* SLIDE 9 */
 #slide-9 { background-color: #000080; color: #ffb6c1; }
 .recycling-container-dual { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; padding-bottom: 5vh; position: relative; width: 90%; }
 .recycling-falling-messy { position: absolute; top: -80vh; left: 10%; width: 80%; height: 80vh; pointer-events: none; }
@@ -235,8 +261,7 @@ body { font-family: 'Montserrat', sans-serif; }
 .bin-text-content { text-align: center; color: var(--rouge); padding: 2rem; }
 .huge-percent-bin { font-size: 6rem; font-weight: 900; margin: 0; line-height: 0.8; }
 
-
-/* --- SLIDE 10 : AFRIQUE DROITE, TEXTE GAUCHE --- */
+/* SLIDE 10 */
 #slide-10 { background-color: #000080; color: #ffb6c1; display: flex; }
 .africa-split-container { display: flex; width: 100%; height: 100%; }
 .africa-text-col { width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; padding-right: 3rem; text-align: right; }
@@ -248,45 +273,40 @@ body { font-family: 'Montserrat', sans-serif; }
 .ghana-overlay { position: absolute; top: 45%; left: 15%; width: 50px; opacity: 0; }
 .orange { color: var(--rouge); }
 
-
-/* --- SLIDE 11 : USINE FUMÉE POINTS --- */
+/* SLIDE 11 */
 #slide-11 { background-color: var(--rouge); color: var(--bleu); }
 .factory-container-dots { position: relative; width: 600px; height: 700px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
 .factory-svg-new { width: 80%; height: auto; z-index: 2; transform: translateY(100%); }
-/* Grille de points */
 .smoke-grid-dots { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 300px; height: 300px; z-index: 1; display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; }
-.dot { width: 100%; padding-bottom: 100%; /* Carré */ background-color: #ccc; border-radius: 50%; opacity: 0; }
+.dot { width: 100%; padding-bottom: 100%; background-color: #ccc; border-radius: 50%; opacity: 0; }
 .dot.colored { background-color: var(--jaune); }
 .factory-text-dots { text-align: center; margin-top: 2rem; opacity: 0; }
 .factory-text-dots h2 { font-size: 8rem; font-weight: 900; margin: 0; color: var(--bleu); line-height: 0.8; }
 
-
-/* --- SLIDE 12 : CHAPEAUX EMPILES --- */
+/* SLIDE 12 */
 #slide-12 { background-color: var(--rouge); color: var(--jaune); }
 .hats-container { position: relative; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
 .hats-main-title { position: absolute; top: 5vh; text-align: center; font-size: 3rem; font-weight: 900; }
 .hats-main-title small { font-size: 1.5rem; font-weight: normal; display: block; }
 .hats-stack-wrapper { position: relative; width: 200px; height: 400px; display: flex; flex-direction: column-reverse; align-items: center; justify-content: flex-start; }
-.hat { width: 100%; height: auto; margin-top: -40px; opacity: 0; transform: translateY(-200px); /* Départ en haut */ }
+.hat { width: 100%; height: auto; margin-top: -40px; opacity: 0; transform: translateY(-200px); }
 .hats-text-col { position: absolute; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 4rem; }
-.col-left { left: 10vw; text-align: right; align-items: flex-end; }
-.col-right { right: 10vw; text-align: left; align-items: flex-start; }
+.col-left { left: 10vw; text-align: right; align-items: flex-end; } .col-right { right: 10vw; text-align: left; align-items: flex-start; }
 .hat-tip { font-size: 1.5rem; font-weight: bold; max-width: 250px; opacity: 0; }
 
-
-/* --- SLIDE 13 : CONCLUSION --- */
+/* SLIDE 13 */
 #slide-13 { background-color: var(--bleu); color: var(--jaune); }
 .final-content { opacity: 0; transform: scale(0.8); }
 .final-content h2 { font-size: 5rem; font-weight: 900; margin-bottom: 1rem; }
 .final-line { width: 100px; height: 5px; background: var(--rouge); margin: 2rem auto; }
 
-/* --- GRID AREAS & COULEURS --- */
+/* GRID */
 #slide-0 { grid-area: 1 / 1; background: radial-gradient(circle at 20% 20%, var(--jaune) 0%, transparent 40%), linear-gradient(135deg, var(--jaune), var(--rouge), var(--vert), var(--bleu)); }
 #slide-1 { grid-area: 2 / 1; background-color: var(--jaune); color: var(--bleu); }
 #slide-2 { grid-area: 2 / 2; background-color: var(--jaune); color: var(--bleu); }
 #slide-3 { grid-area: 3 / 2; background-color: var(--jaune); color: var(--rouge); }
 #slide-4 { grid-area: 4 / 2; background-color: var(--jaune); color: var(--bleu); }
-#slide-5 { grid-area: 4 / 3; background-color: var(--vert); color: var(--jaune); }
+#slide-5 { grid-area: 4 / 3; background-color: #008080; color: var(--jaune); }
 #slide-6 { grid-area: 4 / 4; background-color: var(--vert); color: var(--jaune); }
 #slide-7 { grid-area: 5 / 4; background-color: var(--vert); color: var(--jaune); }
 #slide-8 { grid-area: 5 / 5; background-color: var(--vert); color: var(--jaune); }
