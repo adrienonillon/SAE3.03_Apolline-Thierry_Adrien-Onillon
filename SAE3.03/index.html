@@ -5,115 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impact Fast Fashion</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+
     <main class="scroll-container">
       
-      <section class="slide slide-empty" id="slide-0"></section>
+      <section class="slide" id="slide-0">
+        <div class="content hero-content"><img src="./logo.png" alt="Logo" class="hero-logo"></div>
+      </section>
 
       <section class="slide" id="slide-1">
-          <div class="content">
-            <h2>7 000 Millions</h2>
-            <p>Vêtements neufs achetés par jour en France</p>
+          <div class="falling-elements">
+            <img src="./chaussette.svg" class="falling-item"><img src="./t-shirt.svg" class="falling-item"><img src="./pantalon.svg" class="falling-item"><img src="./chaussette.svg" class="falling-item"><img src="./t-shirt.svg" class="falling-item"><img src="./pantalon.svg" class="falling-item"><img src="./chaussette.svg" class="falling-item"><img src="./t-shirt.svg" class="falling-item">
           </div>
-          <div class="lottie-wrapper" id="lottie-1"></div>
+          <div class="content"><h2>7 000 Millions</h2><p>Vêtements neufs achetés par jour en France</p></div>
       </section>
 
       <section class="slide" id="slide-2">
-          <div class="content">
-            <h2>7 sur 10</h2>
-            <p>Sont considérés comme low cost</p>
+          <div class="tshirt-grid-orig">
+             <img src="./t-shirt.svg" class="ts-icon-orig blue">
+             <img src="./t-shirt.svg" class="ts-icon-orig blue">
+             <img src="./t-shirt.svg" class="ts-icon-orig blue">
+             <img src="./t-shirt.svg" class="ts-icon-orig blue">
+             <img src="./t-shirt.svg" class="ts-icon-orig blue">
+             <img src="./t-shirt.svg" class="ts-icon-orig blue">
+             <img src="./t-shirt.svg" class="ts-icon-orig blue">
+             <img src="./t-shirt.svg" class="ts-icon-orig beige">
+             <img src="./t-shirt.svg" class="ts-icon-orig beige">
+             <img src="./t-shirt.svg" class="ts-icon-orig beige">
           </div>
-          <div class="lottie-wrapper" id="lottie-2"></div>
+          <div class="content text-reveal"><h2>7 sur 10</h2><p>Sont considérés comme low cost</p></div>
       </section>
 
       <section class="slide" id="slide-3">
-          <div class="content">
-            <h2>7200 Vêtements</h2>
-            <p>Proposés par la fast fashion par jour</p>
+          <div class="content zip-content"><h3 class="zip-subtitle">Vêtements</h3><h2 class="zip-number">7200</h2><p class="zip-desc">proposés par jour</p></div>
+          <div class="zipper-container">
+              <div class="zipper-panel panel-left"></div><div class="zipper-panel panel-right"></div>
+              <img src="./zip.svg" class="zipper-pull">
           </div>
-          <div class="lottie-wrapper" id="lottie-3"></div>
       </section>
 
       <section class="slide" id="slide-4">
-          <div class="content">
-            <h2>50%</h2>
-            <p>Des vêtements dorment dans nos placards</p>
+          <div class="split-col text-col-left">
+            <div class="wardrobe-text-wrapper">
+                <h2 class="big-number-alt">50%</h2>
+                <p class="big-desc-alt">Des vêtements dorment<br>dans nos placards</p>
+            </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-4"></div>
+          <div class="split-col visual-col-right">
+              <div class="single-wardrobe-container">
+                  <div class="wardrobe-door-top sliding-right">
+                      <img src="./armoire.svg" class="wardrobe-img-crop top">
+                  </div>
+                  <div class="wardrobe-door-bottom">
+                      <img src="./armoire.svg" class="wardrobe-img-crop bottom">
+                  </div>
+                   <div class="wardrobe-interior-hidden">
+                      <img src="./t-shirt.svg" class="clothes-pile c1">
+                      <img src="./pantalon.svg" class="clothes-pile c2">
+                      <img src="./t-shirt.svg" class="clothes-pile c3">
+                  </div>
+              </div>
+          </div>
       </section>
 
       <section class="slide" id="slide-5">
-          <div class="content">
-            <h2>4<sup>ème</sup></h2>
-            <p>Source d'impact sur l'environnement</p>
+          <div class="chart-container">
+              <h2 class="chart-title">4<sup>ème</sup> source d'impact sur l'environnement</h2>
+              <div class="bars-wrapper">
+                  <div class="chart-bar bar-4">
+                      <div class="tag-shape yellow fixed-tag">
+                          <span class="tag-num">4</span><span class="tag-label">Textile</span>
+                          <img src="./t-shirt.svg" class="tag-icon red-icon"> 
+                      </div>
+                  </div>
+                  <div class="chart-bar bar-3">
+                      <div class="tag-shape yellow fixed-tag">
+                          <span class="tag-num">3</span><span class="tag-label">Alimentation</span>
+                          <img src="./pomme.svg" class="tag-icon red-icon">
+                      </div>
+                  </div>
+                  <div class="chart-bar bar-2">
+                      <div class="tag-shape yellow fixed-tag">
+                          <span class="tag-num">2</span><span class="tag-label">Logement</span>
+                          <img src="./maison.svg" class="tag-icon red-icon">
+                      </div>
+                  </div>
+                  <div class="chart-bar bar-1">
+                      <div class="tag-shape yellow fixed-tag">
+                          <span class="tag-num">1</span><span class="tag-label">Transport</span>
+                          <img src="./bus.svg" class="tag-icon red-icon">
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-5"></div>
       </section>
 
       <section class="slide" id="slide-6">
-          <div class="content">
-            <h2>75 à 80 Heures</h2>
-            <p>Cadence de travail infernale par semaine<br><small>Quelques centimes par vêtements</small></p>
+          <h2 class="top-title">Cadence de travail infernale</h2>
+          <div class="clock-coins-container spaced-out">
+              <div class="clock-wrapper">
+                  <div class="clock-face"><div class="clock-hand hour-hand"></div><div class="clock-hand minute-hand"></div></div>
+              </div>
+              <div class="hours-text"><span class="big-hours">75 à 80</span> HEURES<br>par semaine</div>
+              <div class="coins-wrapper">
+                  <div class="coins-pile">
+                      <img src="./piece.svg" class="coin coin-1"><img src="./piece.svg" class="coin coin-2"><img src="./piece.svg" class="coin coin-3"><img src="./piece.svg" class="coin coin-4"><img src="./piece.svg" class="coin coin-5">
+                  </div>
+                  <p class="coins-text">QUELQUES centimes par vêtements</p>
+              </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-6"></div>
       </section>
 
       <section class="slide" id="slide-7">
-          <div class="content">
-            <h2>7 000 Litres</h2>
-            <p>D'eau pour fabriquer un seul jean</p>
+          <div class="water-content">
+              <h3>La fabrication d'un seul jean nécessite environ</h3>
+              <h2 class="water-number">7 000 LITRES D'EAU</h2>
           </div>
-          <div class="lottie-wrapper" id="lottie-7"></div>
+          <div class="water-fill-container">
+              <div class="water-jet"></div>
+              <div class="water-level">
+                  <svg class="water-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a237e" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+              </div>
+          </div>
       </section>
 
       <section class="slide" id="slide-8">
-          <div class="content">
-            <h2>1 100 Morts</h2>
-            <p>Tragédie sociale - Effondrement du Rana Plaza<br><small>2 500 blessés</small></p>
+          <div class="rana-split-container">
+              <div class="building-col">
+                  <div class="building-wrapper-rana">
+                      <img src="./immeuble.svg" class="building-svg-rana">
+                  </div>
+              </div>
+              <div class="text-col-rana">
+                  <div class="tragedy-text-rana">
+                      <h3>Tragédie sociale<br>Effondrement du Rana Plaza</h3>
+                      <div class="stats-block-rana">
+                          <h2 class="stat-dead">1 100 <span>MORTS</span></h2>
+                          <h2 class="stat-injured">2 500 <span>BLÉSSÉS</span></h2>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-8"></div>
       </section>
 
       <section class="slide" id="slide-9">
-          <div class="content">
-            <h2>36,4%</h2>
-            <p>Des produits mis sur le marché ont été collectés pour être triés</p>
+          <div class="recycling-container-dual">
+              <div class="recycling-falling-messy">
+                <img src="./t-shirt.svg" class="recy-item m1"><img src="./pantalon.svg" class="recy-item m2"><img src="./chaussette.svg" class="recy-item m3"><img src="./t-shirt.svg" class="recy-item m4"><img src="./pantalon.svg" class="recy-item m5">
+              </div>
+              
+              <div class="bins-wrapper-horizontal">
+                  <div class="bin bin-left">
+                      <img src="./recycling-logo.svg" alt="Recycling" class="recy-logo-bin">
+                  </div>
+                  <div class="bin bin-right">
+                      <div class="bin-text-content">
+                        <h2 class="huge-percent-bin">36,4<small>%</small></h2>
+                        <p>des produits mis sur le marché ont été collectés pour être triés.</p>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-9"></div>
       </section>
 
       <section class="slide" id="slide-10">
-          <div class="content">
-            <h2>+15 Millions</h2>
-            <p>De vêtements déposés en Afrique<br><small>Le Ghana reçoit 160 tonnes de textile</small></p>
+          <div class="africa-split-container">
+              <div class="africa-text-col">
+                  <div class="africa-txt-block txt-1">
+                      <h2>+ 15 Millions</h2>
+                      <p>de vêtements déposés en Afrique</p>
+                  </div>
+                  <div class="africa-txt-block txt-2">
+                      <h2>160 Tonnes</h2>
+                      <p>reçues par le Ghana, dont <span class="orange">40%</span> finissent jetés</p>
+                  </div>
+              </div>
+              <div class="africa-map-col">
+                  <div class="map-wrapper-africa">
+                      <img src="./africa-map.svg" class="africa-base">
+                      <img src="./ghana-map.svg" class="ghana-overlay">
+                  </div>
+              </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-10"></div>
       </section>
 
       <section class="slide" id="slide-11">
-          <div class="content">
-            <h2>21%</h2>
-            <p>Des Français estiment que le MADE IN FRANCE est important</p>
+          <div class="factory-container-dots">
+              <img src="./usine.svg" class="factory-svg-new">
+              
+              <div class="smoke-grid-dots">
+                  <span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span>
+                  <span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span><span class="dot colored"></span>
+                  <span class="dot colored"></span>
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+
+              <div class="factory-text-dots">
+                  <h2>21<small>%</small></h2>
+                  <p>des Français estiment que le MADE IN FRANCE EST UN CRITÈRE TRÈS IMPORTANT.</p>
+              </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-11"></div>
       </section>
 
       <section class="slide" id="slide-12">
-          <div class="content">
-            <h2>6 Conseils</h2>
-            <ul>
-              <li>Laver moins souvent</li>
-              <li>Sécher à l'air libre</li>
-              <li>Miser sur la qualité</li>
-            </ul>
+          <div class="hats-container">
+              <h2 class="hats-main-title">6 CONSEILS<br><small>Pour entretenir ses vêtements</small></h2>
+              
+              <div class="hats-stack-wrapper">
+                  <img src="./chapeau-jaune.svg" class="hat hat-6">
+                  <img src="./chapeau-bleu.jpg" class="hat hat-5">
+                  <img src="./chapeau-jaune.svg" class="hat hat-4">
+                  <img src="./chapeau-bleu.jpg" class="hat hat-3">
+                  <img src="./chapeau-jaune.svg" class="hat hat-2">
+                  <img src="./chapeau-bleu.jpg" class="hat hat-1">
+              </div>
+
+              <div class="hats-text-col col-left">
+                  <p class="hat-tip tip-1">Ne pas les laver trop souvent</p>
+                  <p class="hat-tip tip-2">Miser sur la qualité</p>
+                  <p class="hat-tip tip-3">Utiliser des lessives avec des labels</p>
+              </div>
+
+              <div class="hats-text-col col-right">
+                  <p class="hat-tip tip-4">Sécher à l'air libre</p>
+                  <p class="hat-tip tip-5">Plier plutôt que de suspendre</p>
+                  <p class="hat-tip tip-6">Repasser avec modération</p>
+              </div>
           </div>
-          <div class="lottie-wrapper" id="lottie-12"></div>
       </section>
+
+      <section class="slide" id="slide-13">
+          <div class="final-content">
+              <h2>À NOUS D'AGIR</h2>
+              <p>Pour une mode plus responsable.</p>
+              <div class="final-line"></div>
+          </div>
+      </section>
+
     </main>
 
-    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

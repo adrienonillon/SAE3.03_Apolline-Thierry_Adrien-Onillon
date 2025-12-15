@@ -12,6 +12,7 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
-    "gsap": "^3.14.1"
+    "gsap": "^3.14.1",
+    "lottie-web": "^5.13.0"
   }
 }
