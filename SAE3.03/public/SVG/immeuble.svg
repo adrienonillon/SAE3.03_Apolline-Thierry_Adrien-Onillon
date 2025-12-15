@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344.17 522.83">
+  <g id="camembert_France" data-name="camembert France">
+    <line x1="176.09" y1="463.1" x2="176.09" y2="522.33" fill="none" stroke="#e6503c" stroke-miterlimit="10"/>
+  </g>
+  <g id="immeuble">
+    <rect y="29.45" width="344.17" height="492.89" fill="#312782"/>
+    <g id="fenetres">
+      <rect x="15.45" y="96.37" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="62.17" y="96.37" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="15.45" y="199.51" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="62.17" y="199.51" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="15.45" y="251.09" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="62.17" y="251.09" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="15.45" y="302.66" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="62.17" y="302.66" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="15.45" y="354.24" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="62.17" y="354.24" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="15.45" y="147.94" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="62.17" y="147.94" width="27.57" height="36" fill="#fbd236"/>
+    </g>
+    <g id="fenetres-2" data-name="fenetres">
+      <rect x="137.55" y="96.37" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="184.28" y="96.37" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="137.55" y="199.51" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="184.28" y="199.51" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="137.55" y="251.09" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="184.28" y="251.09" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="137.55" y="302.66" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="184.28" y="302.66" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="137.55" y="354.24" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="184.28" y="354.24" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="137.55" y="147.94" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="184.28" y="147.94" width="27.57" height="36" fill="#fbd236"/>
+    </g>
+    <g id="fenetres-3" data-name="fenetres">
+      <rect x="253.19" y="97.77" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="299.91" y="97.77" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="253.19" y="200.92" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="299.91" y="200.92" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="253.19" y="252.49" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="299.91" y="252.49" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="253.19" y="304.07" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="299.91" y="304.07" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="253.19" y="355.64" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="299.91" y="355.64" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="253.19" y="149.34" width="27.57" height="36" fill="#fbd236"/>
+      <rect x="299.91" y="149.34" width="27.57" height="36" fill="#fbd236"/>
+    </g>
+    <rect x="229.26" y="84.48" width="7.66" height="330.89" rx="2.12" ry="2.12" fill="#e6503c"/>
+    <rect x="114.15" y="84.48" width="7.66" height="330.89" rx="2.11" ry="2.11" fill="#e6503c"/>
+    <g id="portes">
+      <rect x="142.89" y="463.1" width="33.19" height="59.23" fill="#ffefb4" stroke="#e6503c" stroke-miterlimit="10"/>
+      <rect x="176.09" y="463.1" width="33.19" height="59.23" fill="#ffefb4" stroke="#e6503c" stroke-miterlimit="10"/>
+    </g>
+    <line y1="442.61" x2="344.17" y2="442.61" fill="none" stroke="#e6503c" stroke-miterlimit="10" stroke-width="3"/>
+    <g id="antenne">
+      <rect x="293.87" y="0" width="7.66" height="33.45" rx="2.12" ry="2.12" fill="#e6503c"/>
+      <rect x="295.28" y="-8.68" width="7.66" height="43.15" rx="2.12" ry="2.12" transform="translate(286.21 312) rotate(-90)" fill="#e6503c"/>
+      <rect x="314.3" y="1.4" width="6.38" height="23.11" rx="2.12" ry="2.12" fill="#e6503c"/>
+      <rect x="277.53" y="1.4" width="6.38" height="23.11" rx="2.12" ry="2.12" fill="#e6503c"/>
+    </g>
+  </g>
+</svg>

@@ -5,6 +5,31 @@ import lottie from 'lottie-web';
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Animation compteur pour slide 1
+function animateCounter() {
+    const counter = { value: 0 };
+    const counterElement = document.querySelector('#counter-7000');
+    
+    if (!counterElement) return;
+    
+    ScrollTrigger.create({
+        trigger: "#slide-1",
+        start: "top center",
+        onEnter: () => {
+            gsap.to(counter, {
+                value: 7000,
+                duration: 0.8,
+                ease: "power1.out",
+                onUpdate: () => {
+                    const formatted = Math.floor(counter.value).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+                    counterElement.textContent = formatted;
+                }
+            });
+        },
+        once: false
+    });
+}
+
 function setupScrollFlow() {
     const container = document.querySelector('.scroll-container');
     const fallingItems = document.querySelectorAll('.falling-item');
@@ -137,6 +162,7 @@ function setupScrollFlow() {
 }
 
 setupScrollFlow();
+animateCounter();
 
 initLottieSimple("#lottie-3", "assets/json/fast_fashion.json");
 initLottieSimple("#lottie-4", "assets/json/armoire.json");
