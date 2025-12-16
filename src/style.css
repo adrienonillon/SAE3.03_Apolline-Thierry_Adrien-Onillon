@@ -562,218 +562,303 @@ body {
    ========================================================================== */
 
 #slide-6 {
-    background-color: var(--vert);
-    color: var(--jaune);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+  background-color: var(--vert);
+  color: var(--jaune);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 #slide-6 .slide__title {
-    /* Augmentation de l'espace sous le titre */
-    margin-bottom: 12vh; 
-    margin-top: 0;
-    text-align: center;
-    width: 100%;
+  /* Augmentation de l'espace sous le titre */
+  margin-bottom: 12vh;
+  margin-top: 0;
+  text-align: center;
+  width: 100%;
 }
 
 /* Conteneur global */
 .work-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start; /* Aligne le haut des colonnes */
-    gap: 8rem;
-    width: 100%;
-    max-width: 1100px;
-    /* On retire la hauteur fixe pour laisser le contenu dicter sa taille */
-    height: auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; /* Aligne le haut des colonnes */
+  gap: 8rem;
+  width: 100%;
+  max-width: 1100px;
+  /* On retire la hauteur fixe pour laisser le contenu dicter sa taille */
+  height: auto;
 }
 
 /* --- CONFIGURATION DES COLONNES --- */
 .col-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* CHANGEMENT ICI : On ne pousse plus aux extrémités. 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* CHANGEMENT ICI : On ne pousse plus aux extrémités. 
        On utilise flex-start + gap pour rapprocher les éléments. */
-    justify-content: flex-start; 
-    gap: 4rem; /* Espace fixe entre l'horloge et le texte en dessous */
+  justify-content: flex-start;
+  gap: 4rem; /* Espace fixe entre l'horloge et le texte en dessous */
 }
 
 /* --- COLONNE GAUCHE --- */
 .clock-wrapper {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  flex-shrink: 0;
 }
 
 #clock-svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
 .cents-text {
-    text-align: center;
-    line-height: 1.1;
-    /* Le gap du parent gère l'espacement maintenant */
+  text-align: center;
+  line-height: 1.1;
+  /* Le gap du parent gère l'espacement maintenant */
 }
 
 .cents-line-1 {
-    font-size: 2.8rem;
-    font-weight: 900;
-    white-space: nowrap;
+  font-size: 2.8rem;
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .cents-line-2 {
-    font-size: 2.8rem;
-    font-weight: 900;
+  font-size: 2.8rem;
+  font-weight: 900;
 }
 
-.text-red { color: var(--rouge); text-transform: uppercase; }
-.text-yellow { color: var(--jaune); }
-.font-omnes { font-family: "Omnes", var(--font-secondary), sans-serif !important; font-weight: 800; }
-.font-novaro { font-family: "Novaro", var(--font-primary), sans-serif; font-weight: 900; }
-
+.text-red {
+  color: var(--rouge);
+  text-transform: uppercase;
+}
+.text-yellow {
+  color: var(--jaune);
+}
+.font-omnes {
+  font-family: "Omnes", var(--font-secondary), sans-serif !important;
+  font-weight: 800;
+}
+.font-novaro {
+  font-family: "Novaro", var(--font-primary), sans-serif;
+  font-weight: 900;
+}
 
 /* --- COLONNE DROITE --- */
 .col-right {
-    /* On aligne optiquement le texte 75h avec l'horloge */
-    padding-top: 2rem; 
-    gap: 6rem; /* Espace entre 75h et les pièces */
+  /* On aligne optiquement le texte 75h avec l'horloge */
+  padding-top: 2rem;
+  gap: 6rem; /* Espace entre 75h et les pièces */
 }
 
 .hours-block {
-    text-align: left;
+  text-align: left;
 }
 
 .hours-big {
-    font-size: 9rem;
-    color: var(--rouge);
-    line-height: 0.8;
-    white-space: nowrap;
-    display: flex; /* Flex pour bien aligner le "à" */
-    align-items: flex-start; /* Aligne tout en haut */
+  font-size: 9rem;
+  color: var(--rouge);
+  line-height: 0.8;
+  white-space: nowrap;
+  display: flex; /* Flex pour bien aligner le "à" */
+  align-items: flex-start; /* Aligne tout en haut */
 }
 
 /* CORRECTION DU "à" */
 .hours-small {
-    font-size: 4rem;
-    color: var(--jaune);
-    margin: 0 1rem; /* Espace autour du à */
-    margin-top: 10px; /* Petit ajustement pour qu'il ne soit pas trop collé au plafond */
-    line-height: 1;
+  font-size: 4rem;
+  color: var(--jaune);
+  margin: 0 1rem; /* Espace autour du à */
+  margin-top: 10px; /* Petit ajustement pour qu'il ne soit pas trop collé au plafond */
+  line-height: 1;
 }
 
 .hours-label {
-    font-size: 3.5rem;
-    color: var(--jaune);
-    text-transform: uppercase;
-    margin-left: 1rem;
-    align-self: center; /* HEURES reste centré verticalement par rapport aux chiffres */
+  font-size: 3.5rem;
+  color: var(--jaune);
+  text-transform: uppercase;
+  margin-left: 1rem;
+  align-self: center; /* HEURES reste centré verticalement par rapport aux chiffres */
 }
 
 .hours-sub {
-    font-size: 3rem;
-    color: var(--jaune);
-    font-weight: bold;
-    margin-top: 0.5rem;
-    text-align: center;
+  font-size: 3rem;
+  color: var(--jaune);
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 /* Pièces */
 .coins-pile {
-    position: relative;
-    width: 250px;
-    height: 150px;
+  position: relative;
+  width: 250px;
+  height: 150px;
 }
 
 .coin {
-    position: absolute;
-    width: 90px;
-    opacity: 0;
-    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.2));
+  position: absolute;
+  width: 90px;
+  opacity: 0;
+  filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.2));
 }
 
-.coin--1 { bottom: 0; left: 10%; z-index: 5; }
-.coin--2 { bottom: 15px; left: 50%; transform: translateX(-50%); z-index: 4; }
-.coin--3 { bottom: 30px; left: 30%; z-index: 3; }
-.coin--4 { bottom: 45px; left: 60%; z-index: 2; }
-.coin--5 { bottom: 10px; left: 80%; z-index: 1; }
+.coin--1 {
+  bottom: 0;
+  left: 10%;
+  z-index: 5;
+}
+.coin--2 {
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+.coin--3 {
+  bottom: 30px;
+  left: 30%;
+  z-index: 3;
+}
+.coin--4 {
+  bottom: 45px;
+  left: 60%;
+  z-index: 2;
+}
+.coin--5 {
+  bottom: 10px;
+  left: 80%;
+  z-index: 1;
+}
 
 /* ==========================================================================
-   SLIDE 7 - WATER
+   SLIDE 7 - EAU (Z-index corrigé & Trous bouchés)
    ========================================================================== */
 
 #slide-7 {
   background-color: var(--vert);
   color: var(--jaune);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  padding-top: 10vh;
+  align-items: center;
+  padding-top: 15vh;
 }
 
-.water__content {
+/* Texte du haut */
+.water__top-text {
   text-align: center;
-  z-index: 10;
+  position: relative;
+  z-index: 40; /* Au-dessus de tout */
 }
 
-.water__number {
-  font-size: 5rem;
-  font-weight: 900;
-  margin-top: 1rem;
+.water__top-text h3 {
+  font-family: "Omnes", var(--font-secondary);
+  font-size: 55px;
+  font-weight: 800;
+  color: var(--jaune);
+  line-height: 1.2;
 }
 
-.water__fill {
+/* --- GESTION DES CALQUES --- */
+
+/* Conteneur générique pour les couches d'eau */
+.water__layer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70%;
-  overflow: hidden;
+  height: 55vh; /* Hauteur de la montée */
+  transform: translateY(110%); /* Caché en bas au début */
   pointer-events: none;
 }
 
-.water__jet {
+.water__layer--back {
+  z-index: 10;
+}
+.water__jet-container {
+  z-index: 20;
+}
+.water__layer--front {
+  z-index: 30;
+}
+
+/* --- LE JET --- */
+.water__jet-container {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 30px;
-  height: 0%;
-  background: #1a237e;
-  z-index: 5;
+  width: 80px;
+  height: 100%;
+  pointer-events: none;
 }
 
-.water__level {
+.water__jet {
+  width: 100%;
+  height: 0%;
+  background-color: #0b167d; /* Même couleur que la vague FRONT */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* --- LES VAGUES --- */
+.water__wave {
+  position: absolute;
+  bottom: 0;
+  /* CORRECTION DU TROU : On rend la vague beaucoup plus large que l'écran */
+  width: 160%;
+  left: -30%; /* On la centre pour avoir de la marge des deux côtés */
+  height: 100%;
+}
+
+.water__wave svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.water__wave--back {
+  height: 110%; /* Un peu plus haute pour l'effet de profondeur */
+  opacity: 1;
+}
+
+/* Blocs solides pour combler le bas de l'écran sous les SVGs */
+.water__block {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0%;
-  background-color: #1a237e;
-  display: flex;
-  align-items: flex-start;
+  height: 10px; /* Juste une sécurité, les SVG couvrent normalement tout */
+}
+.water__block--back {
+  background-color: #151c66;
+  height: 20%;
+}
+.water__block--front {
+  background-color: #0b167d;
+  height: 10%;
 }
 
-.water__wave {
-  width: 200%;
-  height: auto;
+/* --- TEXTE 7000 LITRES --- */
+.water__bottom-text {
   position: absolute;
-  top: -50px;
-  animation: waveMove 10s linear infinite;
-}
-
-@keyframes waveMove {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+  font-family: "Novaro", var(--font-primary); /* Assurez-vous que c'est la bonne police */
+  font-size: 150px; /* Très gros comme sur l'image */
+  color: var(--jaune);
+  z-index: 35;
+  line-height: 1;
+  opacity: 0;
 }
 
 /* ==========================================================================
@@ -1170,7 +1255,13 @@ body {
       var(--jaune) 0%,
       transparent 40%
     ),
-    linear-gradient(135deg, var(--jaune), var(--rouge), var(--vert), var(--bleu));
+    linear-gradient(
+      135deg,
+      var(--jaune),
+      var(--rouge),
+      var(--vert),
+      var(--bleu)
+    );
 }
 
 #slide-1 {

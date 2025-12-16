@@ -185,7 +185,6 @@ function setupScrollFlow() {
 
   const clockDuration = 3; // Durée commune pour la synchronisation
 
-  // 1. Aiguille des minutes (Tourne vite)
   tl.to(
     ".hand-minute",
     { 
@@ -197,8 +196,6 @@ function setupScrollFlow() {
     "slide6-anim"
   );
 
-  // 2. Aiguille des heures (Petite aiguille)
-  // Elle avance un peu (disons de 12h à 4h = 120 degrés environ)
   tl.to(
     ".hand-hour",
     { 
@@ -210,9 +207,6 @@ function setupScrollFlow() {
     "slide6-anim"
   );
 
-  // 3. Remplissage rouge (Pie Chart)
-  // IMPORTANT : Doit avoir la MEME durée et le MEME easing que l'aiguille des heures
-  // 446 est la circonférence totale. On enlève un tiers pour faire ~120 degrés.
   tl.to(
     ".clock-pie", 
     { 
@@ -241,21 +235,51 @@ function setupScrollFlow() {
   // Slide 7: Remplissage d'eau
   tl.to(container, { x: "-300vw", y: "-400vh", ease: "none" });
   tl.addLabel("slide7-anim");
+
+  // 1. Le jet tombe
   tl.to(
     ".water__jet",
-    { height: "100%", duration: 0.5, ease: "power1.in" },
+    { height: "100%", duration: 0.8, ease: "power1.in" },
     "slide7-anim"
   );
+
+  // 2. L'océan monte (Les deux couches en même temps)
   tl.to(
-    ".water__level",
-    { height: "70%", duration: 2.5, ease: "power1.inOut" },
-    "slide7-anim"
+    ".water__layer", // Cible les deux classes .water__layer--front et --back
+    { 
+      y: "0%", 
+      duration: 2.5, 
+      ease: "power2.out" 
+    },
+    "slide7-anim+=0.5"
   );
+
+  // 3. Le texte apparaît
   tl.to(
-    ".water__jet",
-    { height: "0%", top: "100%", duration: 0.5, ease: "power1.out" },
-    "slide7-anim+=2"
+    ".water__bottom-text",
+    { opacity: 1, duration: 1, y: -20 },
+    "slide7-anim+=1.5"
   );
+
+  // --- ANIMATION CONTINUE DES VAGUES (Boucle) ---
+  
+  // Vague avant
+  gsap.to(".water__wave--front", {
+    x: "-5%", 
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+
+  // Vague arrière (mouvement inverse pour plus de naturel)
+  gsap.to(".water__wave--back", {
+    x: "5%", 
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
 
   // Slide 8: Rana Plaza - effondrement
   tl.to(container, { x: "-400vw", y: "-400vh", ease: "none" });
