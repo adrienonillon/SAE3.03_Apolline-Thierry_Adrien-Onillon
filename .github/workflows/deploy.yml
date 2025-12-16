@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  BASE_PATH: /SAE3.03/
+  BASE_PATH: /SAE3.03_Apolline-Thierry_Adrien-Onillon/
 
 jobs:
   build:
