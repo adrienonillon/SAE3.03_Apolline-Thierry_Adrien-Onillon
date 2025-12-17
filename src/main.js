@@ -417,13 +417,12 @@ tl.to(container, {
   duration: 1
 });
 
-// 1. L'usine (groupe SVG) arrive du bas
 tl.fromTo(".factory-visual", 
-  { y: "150%" }, // Part de plus bas
+  { y: "150%" }, 
   { y: "0%", duration: 1, ease: "power2.out" }
 );
 
-// 2. Animation de la fumée (tous les ronds du groupe)
+
 let smokeParticles = document.querySelectorAll("#smoke-group circle, #smoke-group ellipse");
 
 tl.fromTo(smokeParticles, 
@@ -463,10 +462,6 @@ tl.fromTo(".factory-content",
 // SLIDE 12 : CONSEILS
 // ============================================================
 
-// ============================================================
-// SLIDE 12 : CONSEILS
-// ============================================================
-
 tl.to(container, {
   x: "-600vw",
   y: "-400vh",
@@ -474,32 +469,24 @@ tl.to(container, {
   duration: 1
 });
 
-// Animation du BAS vers le HAUT (6 -> 1)
 
-// 1. Chapeau 6 (Tout en bas) + Texte Bas Gauche
 tl.to(".hats__item--6", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" });
-tl.to(".hats__tip--3", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Utiliser des lessives"
+tl.to(".hats__tip--3", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); 
 
-// 2. Chapeau 5 + Texte Bas Droite
 tl.to(".hats__item--5", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
-tl.to(".hats__tip--6", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Repasser avec modération"
+tl.to(".hats__tip--6", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); 
 
-// 3. Chapeau 4 + Texte Milieu Gauche
 tl.to(".hats__item--4", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
-tl.to(".hats__tip--2", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Miser sur la qualité"
+tl.to(".hats__tip--2", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); 
 
-// 4. Chapeau 3 + Texte Milieu Droite
 tl.to(".hats__item--3", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
-tl.to(".hats__tip--5", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Plier plutôt que suspendre"
+tl.to(".hats__tip--5", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); 
 
-// 5. Chapeau 2 + Texte Haut Gauche
 tl.to(".hats__item--2", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
-tl.to(".hats__tip--1", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Ne pas les laver trop souvent"
+tl.to(".hats__tip--1", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); 
 
-// 6. Chapeau 1 (Tout en haut) + Texte Haut Droite
 tl.to(".hats__item--1", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
-tl.to(".hats__tip--4", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Sécher à l'air libre"
-
+tl.to(".hats__tip--4", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); 
 
 // ============================================================
 // SLIDE 13 : FIN

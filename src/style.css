@@ -1112,15 +1112,13 @@
   width: 100%;
 }
 
-/* NOUVEAU : Pour mettre des éléments sur la même ligne alignés en bas */
 .inline-baseline {
   display: flex;
-  align-items: baseline; /* Aligne le bas du texte avec le bas du chiffre */
-  justify-content: center; /* Centre le tout */
-  gap: 1rem; /* Espace entre le texte et le chiffre */
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* --- COLONNE CARTE (DROITE) --- */
 .afrique__visual {
   width: 50%;
   display: flex;
@@ -1139,37 +1137,28 @@
   opacity: 0;
 }
 
-/* --- TYPOGRAPHIE --- */
-
-/* GROS TEXTE (Taille 200) */
-/* 200px / 16px = 12.5rem */
 .afrique__big-text {
   font-family: "Novaro", var(--font-primary);
   font-size: 12.5rem;
   font-weight: 900;
   line-height: 0.8;
   margin: 0;
-  /* Important pour que les spans se comportent bien */
   display: inline-block; 
 }
 
-/* PETIT TEXTE (Taille 55) */
-/* 55px / 16px = 3.43rem */
 .afrique__small-text {
   font-family: "Omnes", var(--font-secondary);
   font-size: 3.43rem;
   font-weight: 800;
   line-height: 1.1;
   margin: 0;
-  margin-top: 1rem; /* Marge par défaut pour les paragraphes sous les titres */
+  margin-top: 1rem;
 }
 
-/* Utilitaire pour enlever la marge quand c'est sur la même ligne */
 .no-margin {
   margin: 0;
 }
 
-/* COULEUR ORANGE */
 .text-orange {
   color: var(--rouge);
 }
@@ -1177,14 +1166,12 @@
 /* ============================================================
    SLIDE 11 - USINE ET POLLUTION
    ============================================================ */
-/* ================= SLIDE 11 - USINE ET POLLUTION ================= */
-
-/* ================= SLIDE 11 - USINE ET POLLUTION ================= */
 
 #slide-11 {
-  background-color: var(--rouge); /* Fond orange */
+  background-color: var(--rouge);
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 
 .factory-container {
@@ -1193,24 +1180,22 @@
   position: relative;
 }
 
-/* --- PARTIE VISUELLE (USINE) : EN BAS A GAUCHE, DÉCOLLÉE --- */
 .factory-visual {
   position: absolute;
-  /* DÉCOLLÉE DU BAS : 20% */
   bottom: 20%; 
-  left: 5%;
-  width: 50vw; /* Un peu plus large pour bien voir la fumée décalée */
+  left: 10%;
+  width: 35vw;
   max-height: 80vh;
+  display: flex;
+  align-items: flex-end;
 }
 
 .factory-full-svg {
   width: 100%;
   height: auto;
-  /* S'assurer que le haut du SVG n'est pas coupé si la fumée monte */
   overflow: visible; 
 }
 
-/* Cache la fumée par défaut */
 #smoke-group circle,
 #smoke-group ellipse {
   opacity: 0;
@@ -1218,19 +1203,18 @@
   transform-origin: center;
 }
 
-/* --- PARTIE TEXTE : HAUT A DROITE --- */
 .factory-content {
   position: absolute;
-  top: 15%;  /* En haut */
-  right: 5%; /* A droite */
+  top: 20%;  
+  right: 10%; 
+  width: 45vw; 
   text-align: right;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  opacity: 0; /* Caché pour l'anim */
+  align-items: flex-end; 
+  opacity: 0;
 }
 
-/* Le bloc "21%" */
 .factory-percent {
   display: flex;
   align-items: baseline;
@@ -1238,28 +1222,25 @@
   margin-bottom: 2rem;
 }
 
-/* Le chiffre 21 (Novaro, 300px) */
 .number-big {
   font-family: "Novaro", var(--font-primary);
-  font-size: 18.75rem; /* ~300px */
-  color: #151C66; /* Bleu foncé */
+  font-size: 9.375rem; 
+  color: #151C66;
   font-weight: 900;
 }
 
-/* Le % (Jaune, en bas) */
 .percent-symbol {
   font-family: "Novaro", var(--font-primary);
-  font-size: 5rem; /* Taille adaptée */
-  color: #FBD236; /* Jaune */
+  font-size: 3rem; 
+  color: #FBD236;
   margin-left: 1rem;
 }
 
-/* Le texte (Omnes, 55px, Bleu) */
 .factory-desc {
   font-family: "Omnes", var(--font-secondary);
-  font-size: 3.4rem; /* ~55px */
+  font-size: 2.2rem;
   font-weight: 900;
-  color: #151C66; /* Bleu foncé */
+  color: #151C66;
   text-transform: uppercase;
   line-height: 1.2;
   margin: 0;
@@ -1272,6 +1253,8 @@
 #slide-12 {
   background-color: var(--rouge);
   color: var(--jaune);
+  position: relative;
+  overflow: hidden;
 }
 
 .hats {
@@ -1283,73 +1266,106 @@
   align-items: center;
 }
 
-.hats__title {
+.hats__header {
   position: absolute;
   top: 5vh;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
-.hats__title small {
-  font-size: 1.5rem;
-  font-weight: normal;
-  display: block;
+.hats__top-line {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  gap: 1rem;
+}
+
+.hats__number {
+  font-family: "Novaro", var(--font-primary);
+  font-size: 9.375rem; 
+  font-weight: 900;
+  color: var(--bleu);
+}
+
+.hats__label {
+  font-family: "Omnes", var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--jaune);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.hats__subtitle {
+  font-family: "Omnes", var(--font-secondary);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--bleu);
+  margin-top: 0;
+  text-align: center;
 }
 
 .hats__stack {
   position: relative;
-  width: 12.5rem;
-  height: 25rem;
+  width: 18rem; 
+  height: 35rem;
   display: flex;
-  /* Inverse l'ordre : le 1er élément du HTML (chapeau 6) sera en BAS */
   flex-direction: column-reverse; 
   align-items: center;
   justify-content: flex-start;
-  
-  /* CORRECTION HAUTEUR : On descend la pile de 15% vers le bas */
-  transform: translateY(15vh); 
+  transform: translateY(5vh); 
 }
 
 .hats__item {
-  width: 100%;
+  width: 80%;
   height: auto;
-  margin-top: -2.5rem;
-  
-  /* Etat initial pour l'animation GSAP */
+  margin-top: -3.5rem;
   opacity: 0;
-  /* On les prépare un peu plus haut pour qu'ils "tombent" légèrement à leur place */
   transform: translateY(-50px); 
 }
 
 .hats__tips {
   position: absolute;
-  /* On aligne les textes par rapport au centre verticalement */
-  top: 55%; 
+  top: 50%; 
+  margin-top: 5vh;
   transform: translateY(-50%);
+  height: 28rem; 
   display: flex;
   flex-direction: column;
-  gap: 4rem; /* Espace entre les lignes de texte */
+  justify-content: space-between; 
+  width: 25vw;
 }
 
 .hats__tips--left {
-  left: 10vw;
-  text-align: right;
-  align-items: flex-end;
+  left: 5vw;
+  align-items: center;
+  text-align: center;
 }
 
 .hats__tips--right {
-  right: 10vw;
-  text-align: left;
-  align-items: flex-start;
+  right: 5vw;
+  align-items: center;
+  text-align: center;
 }
 
 .hats__tip {
-  font-family: "Omnes", var(--font-secondary); /* Ajout police */
-  font-size: 1.5rem;
-  font-weight: 800;
-  max-width: 15.625rem;
-  opacity: 0; /* Caché au début */
+  font-family: "Omnes", var(--font-secondary);
+  font-size: 2.2rem; 
+  font-weight: 900;
+  line-height: 1.1;
+  opacity: 0;
+  margin: 0;
+}
+
+.tip-yellow {
+  color: var(--jaune);
+}
+
+.tip-blue {
+  color: var(--bleu);
 }
 
 /* ============================================================
