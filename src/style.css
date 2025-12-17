@@ -500,7 +500,7 @@
   --target-height: 100%;
 }
 
-/* Étiquettes des graphiques */
+
 .tag {
   width: 100%;
   height: 100%;
@@ -1082,6 +1082,7 @@
 /* ============================================================
    SLIDE 10 - AFRIQUE ET GHANA
    ============================================================ */
+/* ================= SLIDE 10 - AFRIQUE ET GHANA ================= */
 
 #slide-10 {
   background-color: #000080;
@@ -1093,60 +1094,86 @@
   display: flex;
   width: 100%;
   height: 100%;
+  align-items: center;
 }
 
-.afrique__text {
+/* --- COLONNE TEXTE (GAUCHE) --- */
+.afrique__content {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  padding-right: 3rem;
-  text-align: right;
-}
-
-.afrique__map {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 3rem;
+  align-items: center; 
+  text-align: center;
+  padding-right: 5rem;
 }
 
 .afrique__block {
   opacity: 0;
-  margin-bottom: 3rem;
-}
-
-.afrique__block h2 {
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 0;
-  color: var(--rouge);
-}
-
-.afrique__highlight {
-  color: var(--rouge);
-}
-
-.map {
-  position: relative;
-  width: 28.125rem;
-  height: 28.125rem;
-  opacity: 0;
-}
-
-.map__base {
+  margin-bottom: 5rem;
   width: 100%;
+}
+
+/* NOUVEAU : Pour mettre des éléments sur la même ligne alignés en bas */
+.inline-baseline {
+  display: flex;
+  align-items: baseline; /* Aligne le bas du texte avec le bas du chiffre */
+  justify-content: center; /* Centre le tout */
+  gap: 1rem; /* Espace entre le texte et le chiffre */
+}
+
+/* --- COLONNE CARTE (DROITE) --- */
+.afrique__visual {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+.map-svg {
+  width: 100%;
+  max-width: 35rem;
   height: auto;
 }
 
-.map__overlay {
-  position: absolute;
-  top: 45%;
-  left: 15%;
-  width: 3.125rem;
+.map-main, .map-ghana {
   opacity: 0;
+}
+
+/* --- TYPOGRAPHIE --- */
+
+/* GROS TEXTE (Taille 200) */
+/* 200px / 16px = 12.5rem */
+.afrique__big-text {
+  font-family: "Novaro", var(--font-primary);
+  font-size: 12.5rem;
+  font-weight: 900;
+  line-height: 0.8;
+  margin: 0;
+  /* Important pour que les spans se comportent bien */
+  display: inline-block; 
+}
+
+/* PETIT TEXTE (Taille 55) */
+/* 55px / 16px = 3.43rem */
+.afrique__small-text {
+  font-family: "Omnes", var(--font-secondary);
+  font-size: 3.43rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  margin-top: 1rem; /* Marge par défaut pour les paragraphes sous les titres */
+}
+
+/* Utilitaire pour enlever la marge quand c'est sur la même ligne */
+.no-margin {
+  margin: 0;
+}
+
+/* COULEUR ORANGE */
+.text-orange {
+  color: var(--rouge);
 }
 
 /* ============================================================

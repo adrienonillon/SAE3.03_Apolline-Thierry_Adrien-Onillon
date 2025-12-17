@@ -398,10 +398,12 @@ tl.to(container, {
   duration: 1
 });
 
-tl.to(".map", { opacity: 1, duration: 1 });
-tl.to(".afrique__block--1", { opacity: 1, duration: 1 });
-tl.to(".map__overlay", { opacity: 1, duration: 0.5 });
-tl.to(".afrique__block--2", { opacity: 1, duration: 1 });
+
+tl.to(".map-main", { opacity: 1, duration: 1 });
+tl.to(".afrique__block--1", { opacity: 1, duration: 1 }, "<");
+
+tl.to(".map-ghana", { opacity: 1, duration: 0.5 });
+tl.to(".afrique__block--2", { opacity: 1, duration: 1 }, "<");
 
 
 // ============================================================
