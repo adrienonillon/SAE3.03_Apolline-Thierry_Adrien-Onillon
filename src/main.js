@@ -417,28 +417,51 @@ tl.to(container, {
   duration: 1
 });
 
-tl.to(".factory__img", {
-  y: "0%",
-  duration: 1
+// 1. L'usine (groupe SVG) arrive du bas
+tl.fromTo(".factory-visual", 
+  { y: "150%" }, // Part de plus bas
+  { y: "0%", duration: 1, ease: "power2.out" }
+);
+
+// 2. Animation de la fumée (tous les ronds du groupe)
+let smokeParticles = document.querySelectorAll("#smoke-group circle, #smoke-group ellipse");
+
+tl.fromTo(smokeParticles, 
+  { scale: 0, opacity: 0, y: 0 }, 
+  { 
+    scale: 1, 
+    opacity: 1, 
+    y: -80,
+    duration: 1, 
+    ease: "back.out(1.7)", 
+    stagger: {
+      amount: 0.8, 
+      from: "random"
+    }
+  },
+  "<"
+);
+
+gsap.to(smokeParticles, {
+  y: -150,
+  opacity: 0,
+  duration: 2,
+  ease: "sine.inOut",
+  stagger: 0.1,
+  repeat: -1,
+  delay: 1.5
 });
 
-tl.to(".smoke__dot", {
-  opacity: 1,
-  scale: 1,
-  duration: 0.1,
-  stagger: {
-    amount: 2,
-    grid: [10, 10],
-    from: "end"
-  }
-});
+// 3. Le texte apparait depuis la droite
+tl.fromTo(".factory-content", 
+  { x: 100, opacity: 0 },
+  { x: 0, opacity: 1, duration: 1 },
+  "-=1"
+);
 
-tl.to(".factory__text", {
-  opacity: 1,
-  y: 0,
-  duration: 1
-});
-
+// ============================================================
+// SLIDE 12 : CONSEILS
+// ============================================================
 
 // ============================================================
 // SLIDE 12 : CONSEILS
@@ -451,20 +474,31 @@ tl.to(container, {
   duration: 1
 });
 
-tl.to(".hats__item--1", { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" });
-tl.to([".hats__tip--3", ".hats__tip--6"], { opacity: 1, x: 0, duration: 0.3 });
+// Animation du BAS vers le HAUT (6 -> 1)
 
-tl.to(".hats__item--2", { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" });
-tl.to([".hats__tip--2", ".hats__tip--5"], { opacity: 1, x: 0, duration: 0.3 });
+// 1. Chapeau 6 (Tout en bas) + Texte Bas Gauche
+tl.to(".hats__item--6", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" });
+tl.to(".hats__tip--3", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Utiliser des lessives"
 
-tl.to(".hats__item--3", { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" });
-tl.to(".hats__tip--1", { opacity: 1, x: 0, duration: 0.3 });
+// 2. Chapeau 5 + Texte Bas Droite
+tl.to(".hats__item--5", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
+tl.to(".hats__tip--6", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Repasser avec modération"
 
-tl.to(".hats__item--4", { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" });
-tl.to(".hats__tip--4", { opacity: 1, x: 0, duration: 0.3 });
+// 3. Chapeau 4 + Texte Milieu Gauche
+tl.to(".hats__item--4", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
+tl.to(".hats__tip--2", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Miser sur la qualité"
 
-tl.to(".hats__item--5", { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" });
-tl.to(".hats__item--6", { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" });
+// 4. Chapeau 3 + Texte Milieu Droite
+tl.to(".hats__item--3", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
+tl.to(".hats__tip--5", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Plier plutôt que suspendre"
+
+// 5. Chapeau 2 + Texte Haut Gauche
+tl.to(".hats__item--2", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
+tl.to(".hats__tip--1", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Ne pas les laver trop souvent"
+
+// 6. Chapeau 1 (Tout en haut) + Texte Haut Droite
+tl.to(".hats__item--1", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, "-=0.2");
+tl.to(".hats__tip--4", { opacity: 1, x: 0, duration: 0.3 }, "<0.2"); // "Sécher à l'air libre"
 
 
 // ============================================================

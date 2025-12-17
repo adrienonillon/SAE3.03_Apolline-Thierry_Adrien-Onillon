@@ -1,17 +1,117 @@
-<svg width="847" height="698" viewBox="0 0 847 698" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_92_52)">
-<path d="M125.11 450.987H846.812V697.737H140.716L125.11 450.987Z" fill="#0B167D"/>
-<path d="M128.862 434.852L377.695 290.915V427.76L613.773 295.155V424.233L847 290.202V450.462H128.862V434.852Z" fill="#FBD236"/>
-<path d="M30.049 1.87614L0 698H142.142L109.542 0L30.049 1.87614Z" fill="#151C66"/>
-<path d="M741.022 567.796H262.488V639.051H741.022V567.796Z" fill="#FBD236"/>
-<path d="M379.796 567.983L380.509 637.288" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
-<path d="M514.322 567.983L513.271 637.288" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
-<path d="M634.481 567.458L634.144 636.575" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
-<path d="M263.539 601.829H739.259" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
+<svg width="847" height="958" viewBox="0 0 847 958" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_164_198)">
+<path d="M125.11 710.987H846.812V957.737H140.716L125.11 710.987Z" fill="#0B167D"/>
+<path d="M128.862 694.852L377.695 550.915V687.76L613.773 555.155V684.233L847 550.202V710.462H128.862V694.852Z" fill="#FBD236"/>
+<path d="M30.049 261.876L0 958H142.142L109.542 260L30.049 261.876Z" fill="#151C66"/>
+<path d="M741.022 827.796H262.488V899.051H741.022V827.796Z" fill="#FBD236"/>
+<path d="M379.796 827.983L380.509 897.288" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M514.322 827.983L513.271 897.288" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M634.481 827.458L634.144 896.575" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M263.539 861.829H739.259" stroke="#151C66" stroke-width="4" stroke-miterlimit="10"/>
 </g>
+<circle cx="132" cy="258" r="12" fill="#FBD236"/>
+<circle cx="160" cy="230" r="12" fill="#FBD236"/>
+<circle cx="186" cy="204" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 472 190)" fill="#D9D9D9"/>
+<circle cx="186" cy="176" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 472 162)" fill="#D9D9D9"/>
+<circle cx="186" cy="148" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 472 136)" fill="#D9D9D9"/>
+<circle cx="186" cy="120" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 472 108)" fill="#D9D9D9"/>
+<circle cx="186" cy="92" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 472 80)" fill="#D9D9D9"/>
+<circle cx="186" cy="64" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 472 54)" fill="#D9D9D9"/>
+<circle cx="214" cy="64" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 444 54)" fill="#D9D9D9"/>
+<circle cx="214" cy="92" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 444 80)" fill="#D9D9D9"/>
+<circle cx="214" cy="120" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 444 108)" fill="#D9D9D9"/>
+<circle cx="214" cy="148" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 444 136)" fill="#D9D9D9"/>
+<circle cx="214" cy="176" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 444 162)" fill="#D9D9D9"/>
+<circle cx="214" cy="204" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 444 190)" fill="#D9D9D9"/>
+<circle cx="214" cy="230" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 444 214)" fill="#D9D9D9"/>
+<circle cx="242" cy="230" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 416 214)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 282 214)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 308 214)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 334 214)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 362 214)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 388 214)" fill="#D9D9D9"/>
+<circle cx="242" cy="258" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 416 242)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 282 242)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 308 242)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 334 242)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 362 242)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 388 242)" fill="#D9D9D9"/>
+<circle cx="242" cy="204" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 416 190)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 282 190)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 308 190)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 334 190)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 362 190)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 388 190)" fill="#D9D9D9"/>
+<circle cx="242" cy="176" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 416 162)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 282 162)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 308 162)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 334 162)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 362 162)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 388 162)" fill="#D9D9D9"/>
+<circle cx="242" cy="148" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 416 136)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 282 136)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 308 136)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 334 136)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 362 136)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 388 136)" fill="#D9D9D9"/>
+<circle cx="242" cy="120" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 416 108)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 282 108)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 308 108)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 334 108)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 362 108)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 388 108)" fill="#D9D9D9"/>
+<circle cx="242" cy="92" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 416 80)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 282 80)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 308 80)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 334 80)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 362 80)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 388 80)" fill="#D9D9D9"/>
+<circle cx="242" cy="64" r="12" fill="#FBD236"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 416 54)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 282 54)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 308 54)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 334 54)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 362 54)" fill="#D9D9D9"/>
+<ellipse cx="12" cy="11" rx="12" ry="11" transform="matrix(-1 0 0 1 388 54)" fill="#D9D9D9"/>
+<circle cx="242" cy="38" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 416 28)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 282 28)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 308 28)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 334 28)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 362 28)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 388 28)" fill="#D9D9D9"/>
+<circle cx="214" cy="38" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 444 28)" fill="#D9D9D9"/>
+<circle cx="242" cy="12" r="12" fill="#FBD236"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 416 2)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 282 2)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 308 2)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 334 2)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 362 2)" fill="#D9D9D9"/>
+<circle cx="12" cy="12" r="12" transform="matrix(-1 0 0 1 388 2)" fill="#D9D9D9"/>
 <defs>
-<clipPath id="clip0_92_52">
-<rect width="847" height="698" fill="white"/>
+<clipPath id="clip0_164_198">
+<rect width="847" height="698" fill="white" transform="translate(0 260)"/>
 </clipPath>
 </defs>
 </svg>
