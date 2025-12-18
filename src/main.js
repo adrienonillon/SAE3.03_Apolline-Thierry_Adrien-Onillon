@@ -13,7 +13,8 @@ for (let i = 0; i < itemsDeBase.length; i++) {
 // --- LA TIMELINE ---
 let tl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".scroll-container",
+    // CHANGEMENT ICI : On cible le wrapper, pas le container
+    trigger: ".pin-wrapper", 
     start: "top top",
     end: "+=35000",
     scrub: 1,
@@ -79,8 +80,9 @@ tl.to(".tshirts__icon", {
 });
 tl.to(".slide__content--reveal", { opacity: 1, y: 0, duration: 0.5 });
 
-// SLIDE 3 (Sautée)
-
+// ============================================================
+// SLIDE 3 : FAST FASHION (BAS)
+// ============================================================
 tl.to(container, { 
     x: "-100vw", 
     y: "-200vh", 
@@ -88,7 +90,6 @@ tl.to(container, {
     duration: 1 
 });
 
-// Animation simple : le chiffre apparait avec un effet de rebond
 tl.fromTo(".ff-number", 
     { scale: 0, opacity: 0 }, 
     { scale: 1, opacity: 1, duration: 0.8, ease: "back.out(1.7)" }
@@ -103,7 +104,6 @@ tl.fromTo(".ff-text",
     { y: 0, opacity: 1, duration: 0.5 }, 
     "<"
 );
-// Les formes rouges sur le côté peuvent bouger légèrement pour le dynamisme
 tl.fromTo(".ff-shape--left", { x: "-100%" }, { x: "0%", duration: 0.8, ease: "power2.out" }, "<");
 tl.fromTo(".ff-shape--right", { x: "100%" }, { x: "0%", duration: 0.8, ease: "power2.out" }, "<");
 
@@ -146,7 +146,6 @@ tl.to(".tag__content", { opacity: 1, duration: 0.8, stagger: 0.2 });
 
 // ============================================================
 // SLIDE 6 : CADENCE TRAVAIL (BAS - DEBUT DESCENTE)
-// Grid: Row 5, Col 3 -> y: -400vh
 // ============================================================
 tl.to(container, { x: "-200vw", y: "-400vh", ease: "none", duration: 1 });
 tl.to(".hand-minute", {
@@ -175,7 +174,6 @@ tl.fromTo(
 
 // ============================================================
 // SLIDE 7 : EAU (BAS)
-// Grid: Row 6, Col 3 -> y: -500vh
 // ============================================================
 tl.to(container, { x: "-200vw", y: "-500vh", ease: "none", duration: 1 });
 tl.to(".water__jet", { height: "100%", duration: 0.8 });
@@ -198,7 +196,6 @@ gsap.to(".water__wave--back", {
 
 // ============================================================
 // SLIDE 8 : RANA PLAZA (BAS)
-// Grid: Row 7, Col 3 -> y: -600vh
 // ============================================================
 tl.to(container, { x: "-200vw", y: "-600vh", ease: "none", duration: 1 });
 tl.fromTo(".building__svg", { y: "100%" }, { y: "0%", duration: 1 });
@@ -219,7 +216,6 @@ tl.to(".building__svg", { y: "150vh", rotation: 5, opacity: 0, duration: 1.5 });
 
 // ============================================================
 // SLIDE 9 : RECYCLAGE (BAS)
-// Grid: Row 8, Col 3 -> y: -700vh
 // ============================================================
 tl.to(container, { x: "-200vw", y: "-700vh", ease: "none", duration: 1 });
 tl.to(".bins", { y: 0, opacity: 1, duration: 1, ease: "power3.out" });
@@ -255,7 +251,6 @@ tl.add(animationRecyclage);
 
 // ============================================================
 // SLIDE 10 : AFRIQUE (BAS - FIN DESCENTE)
-// Grid: Row 9, Col 3 -> y: -800vh
 // ============================================================
 tl.to(container, { x: "-200vw", y: "-800vh", ease: "none", duration: 1 });
 tl.to(".map-main", { opacity: 1, duration: 1 });
@@ -265,7 +260,6 @@ tl.to(".afrique__block--2", { opacity: 1, duration: 1 }, "<");
 
 // ============================================================
 // SLIDE 11 : USINE (DROITE)
-// Grid: Row 9, Col 4 -> x: -300vw (y reste -800vh)
 // ============================================================
 tl.to(container, { x: "-300vw", y: "-800vh", ease: "none", duration: 1 });
 // Animation simplifiée pour l'usine (juste le texte qui arrive, le lottie joue tout seul)
@@ -278,7 +272,6 @@ tl.fromTo(
 
 // ============================================================
 // SLIDE 12 : CONSEILS (HAUT - REMONTEE)
-// Grid: Row 8, Col 4 -> y: -700vh (x reste -300vw)
 // ============================================================
 tl.to(container, { x: "-300vw", y: "-700vh", ease: "none", duration: 1 });
 tl.to(".hats__item--6", {
@@ -321,7 +314,6 @@ tl.to(".hats__tip--4", { opacity: 1, x: 0, duration: 0.3 }, "<0.2");
 
 // ============================================================
 // SLIDE 13 : FIN (HAUT - REMONTEE)
-// Grid: Row 7, Col 4 -> y: -600vh (x reste -300vw)
 // ============================================================
 tl.to(container, { x: "-300vw", y: "-600vh", ease: "none", duration: 1 });
 tl.to(".final", { opacity: 1, scale: 1, duration: 1.5, ease: "power4.out" });
