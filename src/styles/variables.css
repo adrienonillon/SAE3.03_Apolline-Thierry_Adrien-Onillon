@@ -5,14 +5,13 @@
     --c-vert:  rgb(0, 106, 93);
     --c-bleu:  rgb(0, 20, 128);
     --c-rose:  rgb(245, 168, 193);
+
     --c-blanc: #ffffff;
     --c-noir:  #000000;
-
 
     --font-titre: 'Novaro', sans-serif;
     --font-texte: 'Omnes', sans-serif;
     
-
     --sz-titre-geant: 8rem;
     --sz-titre: 4rem;
     --sz-sous-titre: 2.5rem;

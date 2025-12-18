@@ -1,6 +1,8 @@
 @import "./styles/base.css";
 
-
+/* ============================================================
+   STYLES GLOBAUX & RESET
+   ============================================================ */
 
 html,
 body {
@@ -10,6 +12,7 @@ body {
   height: 100%;
   overscroll-behavior: none;
   font-family: var(--font-texte);
+  color: var(--c-bleu);
 }
 
 .barre-progression {
@@ -50,28 +53,28 @@ body {
   will-change: transform;
 }
 
-/* --- STYLE DE BASE DIAPOSITIVE --- */
+/* ============================================================
+   STYLE DE BASE DIAPOSITIVE
+   ============================================================ */
 
 .diapositive {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-color: var(--c-jaune); /* Défaut */
-  color: var(--c-bleu);
+  background-color: var(--c-jaune);
 }
 
-/* Conteneurs génériques */
 .contenu-diapo {
   z-index: 10;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(0.5rem);
-  border-radius: 1rem;
+  border-radius: 0.9375rem;
   text-align: center;
 }
 
@@ -83,12 +86,11 @@ body {
 
 .animation-revelation {
   opacity: 0;
-  transform: translateY(2rem);
+  transform: translateY(1.875rem);
   background: transparent;
   backdrop-filter: none;
 }
 
-/* Typographie Générique */
 h2,
 h3 {
   margin: 0;
@@ -98,14 +100,17 @@ p {
   margin: 0.5rem 0;
   font-weight: 700;
   font-size: 3.5rem;
+  color: var(--c-bleu);
 }
 
-/* --- SLIDES SPÉCIFIQUES --- */
+/* ============================================================
+   SLIDES SPÉCIFIQUES
+   ============================================================ */
 
-/* #accueil */
+/* --- SLIDE 0 : ACCUEIL --- */
 #accueil {
   grid-area: 1 / 1;
-  background: var(--c-jaune) !important;
+  background: var(--c-jaune);
 }
 
 .vague-decor {
@@ -121,6 +126,7 @@ p {
   width: 100%;
   height: 100%;
   display: block;
+  fill: var(--c-vert);
 }
 
 .entete-accueil {
@@ -129,29 +135,30 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5vh;
+  margin-bottom: 5%; 
 }
 
 .titre-principal {
   font-family: var(--font-titre);
   font-size: var(--sz-titre-geant);
-  color: #151c66;
+  color: var(--c-bleu);
   line-height: 0.85;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 .sous-titre-principal {
   font-family: var(--font-texte);
   font-size: var(--sz-sous-titre);
-  color: #151c66;
+  color: var(--c-bleu);
   font-weight: 800;
   margin-top: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-/* #consommation */
+/* --- SLIDE 1 : CONSOMMATION --- */
 #consommation {
   grid-area: 2 / 1;
 }
@@ -168,7 +175,7 @@ p {
 
 .objet-chute {
   position: absolute;
-  top: -40vh;
+  top: -40%; 
   min-width: 6.25rem;
   z-index: 5;
 }
@@ -190,7 +197,7 @@ p {
   color: var(--c-bleu);
 }
 
-/* #qualite */
+/* --- SLIDE 2 : QUALITÉ --- */
 #qualite {
   grid-area: 2 / 2;
 }
@@ -230,7 +237,7 @@ p {
   font-family: var(--font-titre);
   font-size: 12rem;
   font-weight: 900;
-  color: var(--c-bleu);
+  color: var(--c-rouge);
   line-height: 1;
 }
 .separateur {
@@ -245,7 +252,7 @@ p {
   text-align: center;
 }
 
-/* #fast-fashion */
+/* --- SLIDE 3 : FAST FASHION --- */
 #fast-fashion {
   grid-area: 3 / 2;
   color: var(--c-rouge);
@@ -272,6 +279,7 @@ p {
   width: 100%;
   height: 100%;
   display: block;
+  fill: var(--c-rouge);
 }
 .forme-gauche {
   left: 0;
@@ -291,23 +299,26 @@ p {
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: var(--c-rouge);
+  margin: 0;
 }
 .chiffre-geant {
   font-family: var(--font-titre);
   font-size: 15rem;
   font-weight: 900;
   line-height: 1;
-  color: #312782;
+  color: var(--c-bleu);
   margin: -1rem 0;
 }
 .texte-focus {
   font-size: 2.5rem;
   font-weight: 900;
-  color: #312782;
+  color: var(--c-bleu);
   line-height: 1.2;
+  margin: 0;
 }
 
-/* #armoire */
+/* --- SLIDE 4 : ARMOIRE --- */
 #armoire {
   grid-area: 4 / 2;
   display: flex;
@@ -320,6 +331,7 @@ p {
   display: flex;
   align-items: center;
   padding-left: 12rem;
+  position: relative;
 }
 .colonne-visuel {
   width: 50%;
@@ -339,6 +351,7 @@ p {
   font-size: 18rem;
   font-weight: 900;
   color: var(--c-rouge);
+  line-height: 0.8;
 }
 .symbole-pourcent {
   font-family: var(--font-texte);
@@ -346,11 +359,14 @@ p {
   font-weight: 700;
   color: var(--c-bleu);
 }
+.texte-description {
+  margin-top: 0;
+}
 
 .conteneur-armoire {
   position: relative;
-  width: 34rem;
-  height: 40rem;
+  width: 34.375rem;
+  height: 40.625rem;
   overflow: hidden;
 }
 .porte-armoire {
@@ -396,9 +412,9 @@ p {
   padding-top: 2rem;
 }
 .vetement-interieur {
-  width: 6rem;
+  width: 6.25rem;
   position: absolute;
-  top: -9rem;
+  top: -9.375rem;
 }
 .v-pos-1 {
   left: 32%;
@@ -413,10 +429,10 @@ p {
   transform: translateX(-50%);
 }
 
-/* #impact-env */
+/* --- SLIDE 5 : GRAPHIQUE --- */
 #impact-env {
   grid-area: 4 / 3;
-  background-color: #008080;
+  background-color: var(--c-vert);
   color: var(--c-jaune);
 }
 
@@ -431,7 +447,7 @@ p {
 }
 .entete-graphique {
   position: absolute;
-  top: 2vh;
+  top: 2%;
   left: 5vw;
   display: flex;
   align-items: center;
@@ -441,7 +457,8 @@ p {
   text-align: right;
   font-size: 3.4rem;
   font-weight: 800;
-  color: #fdd835;
+  color: var(--c-jaune);
+  line-height: 1.1;
 }
 .rang-graphique {
   display: flex;
@@ -449,13 +466,16 @@ p {
 }
 .chiffre-rang {
   font-family: var(--font-titre);
-  font-size: 18rem;
-  color: #e53935;
+  font-size: 18.75rem;
+  color: var(--c-rouge);
+  font-weight: 900;
+  line-height: 1;
 }
 .suffixe-rang {
   font-size: 2.5rem;
   font-weight: 900;
-  color: #fdd835;
+  color: var(--c-jaune);
+  margin-left: 0.3125rem;
 }
 
 .zone-barres {
@@ -477,63 +497,79 @@ p {
 .etiquette {
   width: 100%;
   height: 100%;
-  background-color: #fdd835;
+  background-color: var(--c-jaune);
   clip-path: polygon(20% 0%, 80% 0%, 100% 8%, 100% 100%, 0% 100%, 0% 8%);
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  overflow: hidden;
 }
 .contenu-etiquette {
   display: flex;
   flex-direction: column;
   align-items: center;
   opacity: 0;
+  width: 100%;
 }
 .trou-etiquette {
   width: 1.25rem;
   height: 1.25rem;
-  background-color: #004d40;
+  background-color: var(--c-vert);
   border-radius: 50%;
   margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 .chiffre-etiquette {
   font-family: var(--font-titre);
   font-size: 6rem;
-  color: #d32f2f;
+  color: var(--c-rouge);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.5rem;
 }
 .label-etiquette {
   font-size: 2rem;
   font-weight: 800;
-  color: #d32f2f;
+  color: var(--c-rouge);
   margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.2;
 }
 .icone-etiquette {
   width: 5rem;
+  height: auto;
+  margin-bottom: auto;
 }
 
-/* #conditions-travail */
+/* --- SLIDE 6 : CADENCE TRAVAIL --- */
 #conditions-travail {
   grid-area: 5 / 3;
   background-color: var(--c-vert);
+  color: var(--c-jaune);
 }
 .titre-diapo-centre {
-  font-family: var(--c-jaune) !important;
   text-align: center;
-  margin-bottom: 12vh;
+  margin-bottom: 10%;
   font-size: var(--sz-titre);
+  color: var(--c-jaune);
+  font-weight: bold;
+  margin-top: 0;
+  width: 100%;
 }
 
 .conteneur-travail {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 8rem;
   width: 100%;
-  max-width: 68rem;
+  max-width: 68.75rem;
 }
 .colonne-horloge {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: 4rem;
 }
 .colonne-paiement {
@@ -544,14 +580,17 @@ p {
 }
 
 .wrapper-horloge {
-  width: 18rem;
-  height: 18rem;
+  width: 18.75rem;
+  height: 18.75rem;
+  position: relative;
+  flex-shrink: 0;
 }
 .texte-cout {
   text-align: center;
   line-height: 1.1;
   font-weight: 900;
   font-size: 2.8rem;
+  font-family: var(--font-texte);
 }
 .txt-accent {
   color: var(--c-rouge);
@@ -567,6 +606,9 @@ p {
   color: var(--c-rouge);
   line-height: 0.8;
   display: flex;
+  align-items: flex-start;
+  white-space: nowrap;
+  font-weight: 900;
 }
 .unite-heures {
   font-family: var(--font-texte);
@@ -574,70 +616,85 @@ p {
   color: var(--c-jaune);
   margin-left: 1rem;
   align-self: center;
+  text-transform: uppercase;
 }
 .connecteur {
   font-family: var(--font-texte);
   font-size: 4rem;
   color: var(--c-jaune);
   margin: 0 1rem;
+  line-height: 1;
+  margin-top: 0.625rem;
 }
 .sous-texte-heures {
   font-size: 3rem;
   color: var(--c-jaune);
   font-weight: bold;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .pile-pieces {
   position: relative;
-  width: 15rem;
-  height: 9rem;
+  width: 15.625rem;
+  height: 9.375rem;
 }
 .piece {
   position: absolute;
-  width: 5.6rem;
+  width: 5.625rem;
   opacity: 0;
+  filter: drop-shadow(0.125rem 0.125rem 0 rgba(0, 0, 0, 0.2));
 }
 .piece-1 {
   bottom: 0;
-  left: 10%;
+  left: 15%;
   z-index: 5;
 }
 .piece-2 {
-  bottom: 1rem;
+  bottom: 0.9375rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
 }
 .piece-3 {
-  bottom: 2rem;
+  bottom: 1.875rem;
   left: 30%;
   z-index: 3;
 }
 .piece-4 {
-  bottom: 3rem;
+  bottom: 2.8125rem;
   left: 60%;
   z-index: 2;
 }
 .piece-5 {
-  bottom: 0.6rem;
+  bottom: 0.625rem;
   left: 80%;
   z-index: 1;
 }
 
+/* --- SLIDE 7 : EAU --- */
 #eau {
   grid-area: 6 / 3;
   background-color: var(--c-vert);
   padding-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 .entete-eau {
   position: relative;
   z-index: 40;
   text-align: center;
+  margin-bottom: 5rem;
 }
 .entete-eau h3 {
-  font-size: 3.4rem;
+  font-size: 3.4375rem;
   color: var(--c-jaune);
+  font-weight: 800;
+  font-family: var(--font-texte);
+  line-height: 1.2;
 }
 
 .couche-eau {
@@ -648,7 +705,7 @@ p {
   pointer-events: none;
 }
 .eau-arriere {
-  height: 55vh;
+  height: 55%;
   transform: translateY(110%);
   z-index: 10;
 }
@@ -659,6 +716,7 @@ p {
 
 .vague svg {
   width: 100%;
+  height: 100%;
   display: block;
 }
 .vague-arriere {
@@ -684,11 +742,11 @@ p {
 }
 .eau-fond-arriere {
   height: 20%;
-  background-color: #151c66;
+  background-color: var(--c-bleu);
 }
 .eau-fond-avant {
   height: 10%;
-  background-color: #0b167d;
+  background-color: var(--c-bleu);
 }
 
 .conteneur-jet {
@@ -704,8 +762,9 @@ p {
 .jet-eau {
   width: 100%;
   height: 0%;
-  background-color: #0b167d;
-  border-radius: 0 0 1.2rem 1.2rem;
+  background-color: var(--c-bleu);
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
 }
 
 .titre-eau {
@@ -714,13 +773,18 @@ p {
   width: 100%;
   text-align: center;
   font-family: var(--font-titre);
-  font-size: 9rem;
+  font-size: 9.375rem;
   color: var(--c-jaune);
   z-index: 35;
   opacity: 0;
+  line-height: 1;
 }
 
-/* #rana-plaza */
+.colonne-paiement {
+  align-items: flex-end;
+}
+
+/* --- SLIDE 8 : RANA PLAZA --- */
 #rana-plaza {
   grid-area: 7 / 3;
   background-color: var(--c-vert);
@@ -736,6 +800,7 @@ p {
 .entete-tragedie h3 {
   font-size: 3rem;
   color: var(--c-jaune);
+  font-weight: 800;
 }
 
 .contenu-tragedie {
@@ -747,10 +812,14 @@ p {
 }
 .visuel-immeuble {
   flex: 0 0 40%;
+  display: flex;
+  justify-content: flex-start;
 }
 .svg-batiment {
   width: 100%;
-  max-width: 28rem;
+  max-width: 28.125rem;
+  height: auto;
+  display: block;
 }
 
 .stats-tragedie {
@@ -764,11 +833,13 @@ p {
   display: flex;
   align-items: baseline;
   gap: 1.5rem;
+  line-height: 1;
 }
 .chiffre-stat {
   font-size: 8rem;
   color: var(--c-rouge);
   font-family: var(--font-titre);
+  white-space: nowrap;
 }
 .label-stat {
   font-size: 3rem;
@@ -777,11 +848,11 @@ p {
   font-family: var(--font-texte);
 }
 
-/* #recyclage */
+/* --- SLIDE 9 : RECYCLAGE --- */
 #recyclage {
   grid-area: 8 / 3;
-  background-color: #000080;
-  color: #ffb6c1;
+  background-color: var(--c-bleu);
+  color: var(--c-rose);
 }
 .zone-recyclage {
   display: flex;
@@ -804,7 +875,7 @@ p {
 }
 .objet-recyclage {
   position: absolute;
-  width: 5.6rem;
+  width: 5.625rem;
   left: 50%;
   opacity: 0;
 }
@@ -815,34 +886,35 @@ p {
   align-items: flex-end;
   gap: 3rem;
   width: 95%;
-  height: 50vh;
-  margin-bottom: 5vh;
+  height: 50%;
+  margin-bottom: 5%;
   position: relative;
   z-index: 10;
   opacity: 0;
-  transform: translateY(12rem);
+  transform: translateY(12.5rem);
 }
 .bac {
-  background: #ffb6c1;
+  background: var(--c-rose);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 0.6rem 2.5rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.4);
   height: 100%;
+  border-radius: 0;
 }
-/* Cercles décoratifs des bacs */
 .bac::before,
 .bac::after {
   content: "";
   position: absolute;
-  bottom: -1.8rem;
-  width: 3.7rem;
-  height: 3.7rem;
+  bottom: -1.875rem;
+  width: 3.75rem;
+  height: 3.75rem;
   background-color: var(--c-rouge);
-  border: 0.3rem solid var(--c-rouge);
+  border: 0.375rem solid var(--c-rouge);
   border-radius: 50%;
   z-index: -1;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.5);
 }
 .bac::before {
   left: 15%;
@@ -856,7 +928,7 @@ p {
 }
 .logo-bac {
   width: 40%;
-  max-width: 15rem;
+  max-width: 15.625rem;
   fill: var(--c-rouge);
 }
 
@@ -874,7 +946,7 @@ p {
 }
 .chiffre-flottant {
   font-family: var(--font-titre);
-  font-size: 18rem;
+  font-size: 18.75rem;
   color: var(--c-rouge);
   line-height: 0.8;
   position: absolute;
@@ -883,27 +955,41 @@ p {
   width: 100%;
   text-align: center;
   padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  pointer-events: none;
+  z-index: 20;
 }
 .symbole-pourcent-rose {
-  font-size: 3.4rem;
-  color: #ffb6c1;
+  font-size: 3.4375rem;
+  color: var(--c-rose);
   font-family: var(--font-texte);
+  margin-left: 0.9375rem;
 }
 .contenu-bac {
   padding: 3rem;
   text-align: center;
   color: var(--c-rouge);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .contenu-bac p {
-  font-size: 3.4rem;
+  font-size: 3.4375rem;
   line-height: 1.1;
+  margin: 0;
+  font-family: var(--font-texte);
+  font-weight: 800;
+  color: var(--c-rouge);
 }
 
-/* #afrique */
 #afrique {
   grid-area: 9 / 3;
-  background-color: #000080;
-  color: #ffb6c1;
+  background-color: var(--c-bleu);
+  color: var(--c-rose);
   display: flex;
 }
 .contenu-mixte {
@@ -911,22 +997,39 @@ p {
   width: 100%;
   height: 100%;
   align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 2rem;
 }
+
 .colonne-info-afrique {
-  width: 50%;
-  padding-right: 5rem;
+  flex: 1;
+  max-width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
+
 .colonne-carte {
-  width: 50%;
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
   padding-left: 2rem;
+  box-sizing: border-box;
 }
+
 .carte-afrique {
   width: 100%;
+  height: auto;
   max-width: 35rem;
+  min-width: 20rem; 
+  display: block;
 }
 
 .bloc-info {
@@ -934,42 +1037,67 @@ p {
   width: 100%;
 }
 .bloc-1 {
-  margin-bottom: 5rem;
+  margin-bottom: 10%;
 }
 .texte-geant {
   font-family: var(--font-titre);
-  font-size: 12.5rem;
+  font-size: 10vw;
   line-height: 0.8;
+  margin: 0;
+  display: inline-block;
+  font-weight: 900;
 }
+@media (min-width: 1200px) {
+  .texte-geant {
+    font-size: 12.5rem;
+  }
+}
+
 .texte-geant.petit {
-  font-size: 12.5rem;
   color: var(--c-rouge);
 }
 .texte-legende {
+  color: var(--c-rose);
   font-family: var(--font-texte);
-  font-size: 3.4rem;
+  font-size: 3rem;
   line-height: 1.1;
   margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 800;
 }
+
+@media (max-width: 1400px) {
+  .texte-legende {
+    font-size: 2rem;
+  }
+}
+
 .ligne-alignee {
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .sans-marge {
   margin: 0;
+}
+.txt-accent {
+  color: var(--c-rouge);
 }
 .carte-continent,
 .carte-pays-ghana {
   opacity: 0;
 }
 
-/* #made-in-france */
+/* --- SLIDE 11 : USINE --- */
+
 #made-in-france {
   grid-area: 9 / 4;
-  background-color: var(--c-blanc);
+  background-color: var(--c-rouge);
+  color: var(--c-blanc);
 }
+
 .conteneur-usine {
   width: 100%;
   height: 100%;
@@ -983,26 +1111,36 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+  z-index: 1;
 }
 .visuel-lottie dotlottie-wc {
   width: 100%;
   height: auto;
   transform: scale(1.5) translateX(10%);
+  max-height: none;
 }
 
 .info-usine {
   width: 40%;
   text-align: left;
   opacity: 0;
-  transform: translateX(100px);
+  padding-left: 0;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .chiffre-usine {
   font-family: var(--font-titre);
   font-size: 15rem;
-  color: #151c66;
+  color: var(--c-bleu);
   line-height: 0.8;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 0;
 }
 .pourcent-jaune {
   font-size: 2rem;
@@ -1011,22 +1149,18 @@ p {
   margin-top: 1.5rem;
 }
 .texte-usine {
-  color: #151c66;
+  color: var(--c-bleu);
   padding-left: 1rem;
+  font-family: var(--font-texte);
 }
 .sous-titre-usine {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.titre-usine {
-  font-size: 3rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1;
+  margin: 0 0 0.5rem 0;
+  color: var(--c-bleu);
 }
 
-/* #conseils */
+/* --- SLIDE 12 : CONSEILS --- */
 #conseils {
   grid-area: 8 / 4;
   background-color: var(--c-rouge);
@@ -1043,29 +1177,40 @@ p {
 
 .entete-conseils {
   position: absolute;
-  top: 5vh;
+  top: 5%;
   z-index: 10;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .ligne-titre-conseil {
   display: flex;
   align-items: center;
-  justify-content: center;
+  line-height: 1;
   gap: 1rem;
 }
 .chiffre-titre {
   font-family: var(--font-titre);
-  font-size: 9rem;
+  font-size: 9.375rem;
+  font-weight: 900;
   color: var(--c-bleu);
 }
 .label-titre {
+  font-family: var(--font-texte);
   font-size: 2.5rem;
   font-weight: 900;
+  color: var(--c-jaune);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
 }
 .sous-titre-conseil {
+  font-family: var(--font-texte);
   font-size: 3rem;
   font-weight: 900;
   color: var(--c-bleu);
+  margin-top: 0;
+  text-align: center;
 }
 
 .pile-chapeaux {
@@ -1075,7 +1220,8 @@ p {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  transform: translateY(5vh);
+  justify-content: flex-start;
+  transform: translateY(5%);
 }
 .chapeau {
   width: 80%;
@@ -1088,26 +1234,31 @@ p {
 .liste-astuces {
   position: absolute;
   top: 50%;
+  margin-top: 5%;
   transform: translateY(-50%);
   height: 28rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 25vw;
-  margin-top: 5vh;
 }
 .astuces-gauche {
   left: 5vw;
+  align-items: center;
   text-align: center;
 }
 .astuces-droite {
   right: 5vw;
+  align-items: center;
   text-align: center;
 }
 .astuce {
+  font-family: var(--font-texte);
   font-size: 2.2rem;
   font-weight: 900;
+  line-height: 1.1;
   opacity: 0;
+  margin: 0;
 }
 .astuce-jaune {
   color: var(--c-jaune);
@@ -1116,6 +1267,7 @@ p {
   color: var(--c-bleu);
 }
 
+/* --- SLIDE 13 : CONCLUSION --- */
 #conclusion {
   grid-area: 7 / 4;
   background-color: var(--c-bleu);
@@ -1129,11 +1281,13 @@ p {
 .bloc-final h2 {
   font-size: 5rem;
   font-weight: 900;
+  font-family: var(--font-texte);
   margin-bottom: 1rem;
 }
 .ligne-separation {
-  width: 6rem;
-  height: 0.3rem;
+  width: 6.25rem;
+  height: 0.3125rem;
+  font-family: var(--font-texte);
   background: var(--c-rouge);
   margin: 2rem auto;
 }
