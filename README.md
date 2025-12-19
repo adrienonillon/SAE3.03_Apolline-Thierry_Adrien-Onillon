@@ -12,7 +12,7 @@ Comme nous nous adressons à un large public, nous avons adopté un ton neutre e
 La narration du site est organisée par thèmes. À travers 11 diapositives, nous racontons ces données en les illustrant par des animations et des illustrations.
 Nous commençons par poser le contexte à l’aide de chiffres clés afin de mieux comprendre la consommation textile actuelle. Ensuite, nous abordons les problématiques liées à la surconsommation et leurs conséquences, en nous appuyant sur des données concernant les impacts environnementaux et sociétaux.
 Nous enchaînons avec le devenir des vêtements en fin de vie, avant de conclure par des conseils pour consommer de manière plus responsable. Chaque thème est associé à une couleur spécifique afin de faciliter la compréhension et la lecture.
-Le site utilise le scroll horizontal et vertical, cela permet aux utilisateurs d'avoir une expérience immersive en se faisant transporter par le scroll. On decidé d'utiliser un scroll verticale avant pour quelle que chose de plus responsive mais certaine fois le scroll horizontale était plus adapté au types d'animations que le voulais mettre en place.
+Le site utilise le scroll horizontal et vertical, cela permet aux utilisateurs d'avoir une expérience immersive en se faisant transporter par le scroll. Nous avons principalement opté pour un scroll vertical pour des raisons de lisibilité et de responsivité, mais le scroll horizontal s’est révélé plus adapté pour certains types d’animations spécifiques.
 
 ### Frontend
 
